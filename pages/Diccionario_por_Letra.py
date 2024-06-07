@@ -3,6 +3,7 @@ import pandas as pd
 from time import sleep
 from st_click_detector import click_detector
 from modules.nav import MenuButtons
+import os
 st.set_page_config(layout="wide", page_title="Diccionario Por Letra")
 m = st.markdown("""
 <style>
@@ -161,9 +162,9 @@ def print_list(next_list):
   
 #start with download
 if st.session_state.download_letter == False:
-  download_csv(st.secrets['diccionario_add'], 'Search List2.csv')
+  download_csv(os.getenv("DIC_ADD"), 'Search List2.csv')
 
-word_data = download_csv(st.secrets["diccionario_add"], 'Search List2.csv')
+word_data = download_csv(os.getenv("DIC_ADD"), 'Search List2.csv')
 word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 word_data['Video'] = word_data['Video'].apply(replace_dimensions)
 word_data['Imagen'] = word_data['Imagen'].apply(replace_dimensions_img)
