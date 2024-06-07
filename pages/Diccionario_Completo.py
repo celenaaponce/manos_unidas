@@ -1,6 +1,7 @@
 import streamlit as st
 from modules.nav import MenuButtons
 import pandas as pd
+import os
 
 st.set_page_config(layout="wide", page_title="Diccionario Completo")
 m = st.markdown("""
