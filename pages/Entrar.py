@@ -5,6 +5,7 @@ from pages.sidebars import regular_sidebar, login_sidebar_ASL1, login_sidebar_AS
 from streamlit import session_state as ss
 from modules.nav import MenuButtons
 from pages.account import get_roles
+import os
 
 if 'password_correct' not in ss:
     ss.password_correct = False
@@ -20,7 +21,7 @@ st.markdown("""
 
 def password_entered():
         """Checks whether a password entered by the user is correct."""
-        if st.session_state['password'] == st.secrets['password']:
+        if st.session_state['password'] == os.getenv("CLASS_PASSWORD"):
                 st.session_state["password_correct"] = True
         else:
                 st.session_state["password_correct"] = False
