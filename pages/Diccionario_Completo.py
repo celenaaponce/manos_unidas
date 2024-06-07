@@ -76,7 +76,7 @@ def download_csv(file_id, output_file):
     return data
     
 if st.session_state.download_completo == False:
-    download_csv(os.getenv("DIC_AD"), 'Small Preview2.csv')
+    download_csv(os.getenv("DIC_ADD"), 'Small Preview2.csv')
 
 @st.cache_data
 def load_words_completo():  
