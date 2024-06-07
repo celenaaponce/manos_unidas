@@ -75,7 +75,7 @@ def download_csv(file_id, output_file):
     return data
     
 if st.session_state.download_completo == False:
-    download_csv(st.secrets["diccionario_add"], 'Small Preview2.csv')
+    download_csv(os.getenv("DIC_AD"), 'Small Preview2.csv')
 
 @st.cache_data
 def load_words_completo():  
@@ -83,7 +83,7 @@ def load_words_completo():
           data = pd.DataFrame(chunk)
   return data
     
-word_data = download_csv(st.secrets["diccionario_add"], 'Small Preview2.csv')
+word_data = download_csv(os.getenv("DIC_ADD"), 'Small Preview2.csv')
 word_data = word_data[['Palabra', 'Imagen', 'Video', 'Tema', 'Sinómino']]
 word_data['Video'] = word_data['Video'].apply(replace_dimensions)
 word_data['Imagen'] = word_data['Imagen'].apply(replace_dimensions_img)
