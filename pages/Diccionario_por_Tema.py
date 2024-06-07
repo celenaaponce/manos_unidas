@@ -3,6 +3,7 @@ import pandas as pd
 from st_click_detector import click_detector
 from modules.nav import MenuButtons
 from bs4 import BeautifulSoup
+import os
 
 st.set_page_config(layout="wide", page_title="Diccionario Por Tema")
 m = st.markdown("""
@@ -163,10 +164,10 @@ with open("css/responsive.css") as file2:
 
 #start with download
 if st.session_state.download_tema == False:
-  download_csv(st.secrets['diccionario_add'], 'GitThemeLinks.csv')
+  download_csv(os.getenv("DIC_ADD"), 'GitThemeLinks.csv')
   st.session_state.download_tema = True
     
-word_data = download_csv(st.secrets['diccionario_add'], 'GitThemeLinks.csv')
+word_data = download_csv(os.getenv("DIC_ADD"), 'GitThemeLinks.csv')
 
 if 'page' not in st.session_state:
     st.session_state.page = 'main'
