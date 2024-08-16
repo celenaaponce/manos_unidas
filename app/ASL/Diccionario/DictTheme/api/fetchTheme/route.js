@@ -66,6 +66,7 @@ import { Client } from "@notionhq/client";
 import { NextResponse } from "next/server";
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
+console.log(process.env.NOTION_API_KEY)
 
 export async function GET(request) {
   const theme = request.headers.get('x-filter'); // Get 'filter' value from a custom header
