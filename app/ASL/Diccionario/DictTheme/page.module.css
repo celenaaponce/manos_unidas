@@ -1,0 +1,57 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 4 equal columns */
+  gap: 20px; /* Adds space between the columns */
+  margin-bottom: 5rem;
+}
+/* Media query for screens with max width 600px */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack items vertically */
+  }
+}
+
+.themeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  list-style-type: none; /* Remove bullet points */
+  padding: 10px; /* Add padding inside the container */
+  margin: 0; /* Remove default margin */
+  background-color: white; /* Add white background */
+  border-radius: 8px; /* Optional: Add rounded corners */
+
+  width: 400px; /* Fixed width to make the container square */
+  height: 500px; /* Adjusted height to accommodate the title */
+  text-align: center; /* Center text within the container */
+}
+
+.themeContainer a {
+  display: block; /* Ensure the link element is a block to cover the image */
+  width: 100%; /* Make the link take full width */
+  height: auto; /* Adjust height automatically */
+}
+
+.themeContainer .image {
+  width: 95%; /* Ensure the image occupies the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Change cursor to pointer */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 4px; /* Optional: Add some rounding to the image corners */
+}
+
+.themeContainer .title {
+  margin-top: 2px; /* Space between the image and the title */
+  font-size: 3rem; /* Adjust font size as needed */
+  font-style: bold;
+  color: #333; /* Title color */
+}
+

@@ -1,0 +1,276 @@
+{
+  "Themes": [
+    {
+      "id": "t32",
+      "theme": "todo",
+      "image": "/categories/food2.png",
+      "search": "Frutas, Verduras, Carne, Bravo 2, Bravo 4, ASL En Casa 1, Mas Comida, Dia de Accion de Gracias"
+    },
+    {
+      "id": "t33",
+      "theme": "todo",
+      "image": "/categories/house2.png",
+      "search": "Interior de Casa, Bravo 3, Quehaceres, Exterior de Casa, Plano de Casa"
+    },
+    {
+      "id": "t34",
+      "theme": "todo",
+      "image": "/categories/holiday.svg",
+      "search": "Pascua, Dia de los Muertos, Halloween, Primavera, Dia de San Valentin, Dia de Accion de Gracias"
+    },
+    {
+      "id": "t35",
+      "theme": "todo",
+      "image": "/categories/school.png",
+      "search": "Bravo 7, Bravo 8"
+    },
+    {
+      "id": "t36",
+      "theme": "todo",
+      "image": "/categories/basic2.png",
+      "search": "Numeros, Bravo 6, Alfabeto, Bravo 8"
+    },
+    {
+      "id": "t37",
+      "theme": "todo",
+      "image": "/categories/basic3.png",
+      "search": "Introduccion, Sentimientos, Familia, Bravo 1"
+    },
+    {
+      "id": "t38",
+      "theme": "todo",
+      "image": "/categories/routine2.png",
+      "search": "ASL En Casa 1, ASL En Casa 2, ASL En Casa 3"
+    },
+    {
+      "id": "t1",
+      "theme": "frutas",
+      "image": "/themes/fruit.png",
+      "search": "Frutas"
+    },
+    {
+      "id": "t2",
+      "theme": "verduras",
+      "image": "/themes/vegetables.png",
+      "search": "Verduras"
+    },
+    {
+      "id": "t3",
+      "theme": "carne",
+      "image": "/themes/meat.png",
+      "search": "Carne"
+    },
+    {
+      "id": "t4",
+      "theme": "interior de casa",
+      "image": "/themes/interior3.png",
+      "search": "Interior de Casa"
+    },
+    {
+      "id": "t5",
+      "theme": "colores",
+      "image": "/themes/Colores.png",
+      "search": "Colores"
+    },
+    {
+      "id": "t6",
+      "theme": "desayuno (bravo 2)",
+      "image": "/themes/breakfast.png",
+      "search": "Bravo 2"
+    },
+    {
+      "id": "t7",
+      "theme": "casa (bravo 3)",
+      "image": "/themes/bravo3_2.png",
+      "search": "Bravo 3"
+    },
+    {
+      "id": "t8",
+      "theme": "pascua",
+      "image": "/themes/easter.png",
+      "search": "Pascua"
+    },
+    {
+      "id": "t9",
+      "theme": "ir de compras (bravo 4)",
+      "image": "/themes/bravo4_2.png",
+      "search": "Bravo 4"
+    },
+    {
+      "id": "t10",
+      "theme": "números",
+      "image": "/themes/numbers.png",
+      "search": "Numeros"
+    },
+    {
+      "id": "t11",
+      "theme": "deletrear (bravo 6)",
+      "image": "/themes/alphabet.png",
+      "search": "Bravo 6"
+    },
+    {
+      "id": "t12",
+      "theme": "escuela (bravo 7)",
+      "image": "/themes/school.png",
+      "search": "Bravo 7"
+    },
+    {
+      "id": "t13",
+      "theme": "introducción",
+      "image": "/themes/introduction.png",
+      "search": "Introduccion"
+    },
+    {
+      "id": "t14",
+      "theme": "sentimientos",
+      "image": "/themes/feelings.png",
+      "search": "Sentimientos"
+    },
+    {
+      "id": "t15",
+      "theme": "día de los muertos",
+      "image": "/themes/daydead.png",
+      "search": "Dia de los Muertos"
+    },
+    {
+      "id": "t16",
+      "theme": "halloween",
+      "image": "/themes/halloween2.png",
+      "search": "Halloween"
+    },
+    {
+      "id": "t17",
+      "theme": "alfabeto",
+      "image": "/themes/abc.png",
+      "search": "Alfabeto"
+    },
+    {
+      "id": "t18",
+      "theme": "primavera",
+      "image": "/themes/spring.png",
+      "search": "Primavera"
+    },
+    {
+      "id": "t19",
+      "theme": "quehaceres",
+      "image": "/themes/chores.png",
+      "search": "Quehaceres"
+    },
+    {
+      "id": "t20",
+      "theme": "familia",
+      "image": "/themes/family.png",
+      "search": "Familia"
+    },
+    {
+      "id": "t21",
+      "theme": "hora de comer <br/>(asl en casa 1)",
+      "image": "/themes/dinner.png",
+      "search": "ASL En Casa 1"
+    },
+    {
+      "id": "t22",
+      "theme": "exterior de casa",
+      "image": "/themes/exterior2.png",
+      "search": "Exterior de Casa"
+    },
+    {
+      "id": "t23",
+      "theme": "hora de bañar <br/>(asl en casa 2)",
+      "image": "/themes/bath.png",
+      "search": "ASL En Casa 2"
+    },
+    {
+      "id": "t24",
+      "theme": "cambiar pañal <br/>(asl en casa 3)",
+      "image": "/themes/diaper.png",
+      "search": "ASL En Casa 3"
+    },
+    {
+      "id": "t25",
+      "theme": "más comida",
+      "image": "/themes/morefood.png",
+      "search": "Mas Comida"
+    },
+    {
+      "id": "t26",
+      "theme": "conocer la familia (bravo 1)",
+      "image": "/themes/meetfambravo1.png",
+      "search": "Bravo 1"
+    },
+    {
+      "id": "t27",
+      "theme": "día de san valentin",
+      "image": "/themes/valentines.png",
+      "search": "Dia de San Valentin"
+    },
+    {
+      "id": "t28",
+      "theme": "día de accion de gracias",
+      "image": "/themes/thanksgiving.png",
+      "search": "Dia de Accion de Gracias"
+    },
+    {
+      "id": "t29",
+      "theme": "matematicas (bravo 8)",
+      "image": "/themes/math.png",
+      "search": "Bravo 8"
+    },
+    {
+      "id": "t30",
+      "theme": "banco (bravo 9)",
+      "image": "/themes/bank.png",
+      "search": "Bravo 9"
+    },
+    {
+      "id": "t31",
+      "theme": "plano de casa",
+      "image": "/themes/interior2.png",
+      "search": "Plano de Casa"
+    }
+  ],
+  "Categories": [
+    {
+      "category": "comida",
+      "ids": ["t32", "t28", "t25", "t21", "t9", "t6", "t3", "t2", "t1"],
+      "image": "/categories/food2.png",
+      "id": "c1"
+    },
+    {
+      "category": "casa",
+      "ids": ["t31", "t22", "t19", "t7", "t4", "t33"],
+      "image": "/categories/house2.png",
+      "id": "c2"
+    },
+    {
+      "category": "días festivos",
+      "ids": ["t28", "t27", "t16", "t15", "t8", "t18", "t34"],
+      "image": "/categories/holiday.svg",
+      "id": "c3"
+    },
+    {
+      "category": "escuela",
+      "ids": ["t12", "t29", "t35"],
+      "image": "/categories/school.png",
+      "id": "c4"
+    },
+    {
+      "category": "números y letras",
+      "ids": ["t30", "t29", "t10", "t11", "t17", "t36"],
+      "image": "/categories/basic2.png",
+      "id": "c5"
+    },
+    {
+      "category": "básicos y familia",
+      "ids": ["t13", "t14", "t20", "t26", "t37"],
+      "image": "/categories/basic3.png",
+      "id": "c6"
+    },
+    {
+      "category": "rutina",
+      "ids": ["t24", "t23", "t21", "t38"],
+      "image": "/categories/routine2.png",
+      "id": "c7"
+    }
+  ]
+}

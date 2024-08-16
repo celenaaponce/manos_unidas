@@ -1,0 +1,27 @@
+[
+  {
+    "id": "m1",
+    "name": "Diccionario",
+    "description": "Buscar señas y frases en un diccionario de Español a ASL",
+    "image": "/images/full.png"
+  },
+  {
+    "id": "m2",
+    "name": "Cuentos",
+    "description": "Mirar videos de libros en español con ASL",
+    "image": "/images/cuentos2.png"
+  },
+  {
+    "id": "m3",
+    "name": "Entrar",
+    "description": "Entrar para recursos de sus clases",
+    "image": "/images/enter2.png",
+    "alt": "Entrar a su clase"
+  },
+  {
+    "id": "m4",
+    "name": "Clases",
+    "description": "Tomar clases gratis en español para aprender lengua de señas americana. ",
+    "image": "/images/classes2.png"
+  }
+]
