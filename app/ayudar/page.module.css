@@ -47,7 +47,9 @@ h2.section  {
   .hero a:visited {
     color: #56b4e9
   }
-
+  .hero a{
+    color: #56b4e9
+  }
   /* General image container styling */
   .imageContainer {
     display: flex;
