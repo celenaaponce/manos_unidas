@@ -15,7 +15,7 @@ export default function Home() {
           <div className={classes.hero}>
             <AudioPlayer
               className={classes.audioPlayer}
-              src="/audio/Empezando.mp3"
+              src="/audio/ManosUnidasApoyando.mp3"
               style={{marginLeft:"-1rem"}}
             />
             <h1>Manos Unidas</h1>
@@ -35,7 +35,7 @@ export default function Home() {
         <section className={classes.section}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/quiensomos.mp3"
           />
           <h2>Quien Somos</h2>
           <p>
@@ -48,8 +48,8 @@ export default function Home() {
           </p>
 
           <p>
-            Entre las miembras de nuestro consejo tenemos más que 50 años de
-            experiencia trabajando con niños sordos y familias Latinas. Tambien
+            Entre los miembros de nuestro consejo tenemos más que 50 años de
+            experiencia trabajando con niños sordos y familias Latinas. También
             tenemos asociación con organizaciones en 10 estados.
           </p>
         </section>
@@ -57,7 +57,7 @@ export default function Home() {
         <section className={classes.section}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/nuestramision.mp3"
           />
           <h2>Nuestra Misión</h2>
           <p>

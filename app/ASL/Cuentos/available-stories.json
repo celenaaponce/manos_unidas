@@ -4,112 +4,128 @@
       "name": "Jirafas no pueden bailar",
       "description": "Realizado por Jeni Jackson de Rocky Mountain School for the Deaf",
       "website": "https://www.youtube.com/watch?v=trV9g7OWAss",
-      "image": "/stories/jirafas.jpeg"
+      "image": "/stories/jirafas.jpeg",
+      "audio": "/audio/jirafas.mp3"
     },
     {
       "id": "c2",
       "name": "El libro de colores de Coneja Blanca",
       "description": "Realizado por Jeni Jackson de Rocky Mountain School for the Deaf",
       "website": "https://youtu.be/xqJVGpVjJZg",
-      "image": "/stories/conejito.jpeg"
+      "image": "/stories/conejito.jpeg",
+      "audio": "/audio/ellibrodecolores.mp3"
     },
     {
       "id": "c3",
       "name": "Bañarse bañarse bañarse",
       "description": "Realizado por Rochester School for the Deaf",
       "website": "https://youtu.be/qp9jl0ECUwA",
-      "image": "/stories/bañarse.png"
+      "image": "/stories/bañarse.png",
+      "audio": "/audio/banarse.mp3"
     },
     {
       "id": "c4",
       "name": "¿Eres una vaca?",
       "description": "Realizado por Krista Hine de Pineapple and Cheese",
       "website": "https://youtu.be/AShZlHInWEU?si=pl6z-CYjEKM24Dsr",
-      "image": "/stories/vaca.png"
+      "image": "/stories/vaca.png",
+      "audio": "/audio/eresunavaca.mp3"
     },
     {
       "id": "c5",
       "name": "Mis señas de hora de comer",
       "description": "Realizado por Rochester School for the Deaf",
       "website": "https://youtu.be/q7QTDovFA74",
-      "image": "/stories/comer.png"
+      "image": "/stories/comer.png",
+      "audio": "/audio/missenasdehoradecomer.mp3"
     },
     {
       "id": "c6",
       "name": "Mis señas de tiempo de bañar",
       "description": "Realizado por Rochester School for the Deaf",
       "website": "https://www.youtube.com/watch?v=4TmdTAaPYdA",
-      "image": "/stories/tiempoBañar.png"
+      "image": "/stories/tiempoBañar.png",
+      "audio": "/audio/tiempodebanar.mp3"
     },
     {
       "id": "c7",
       "name": "¡Feliz día de San Valentin Ratón!",
       "description": "Realizado por Krista Hine de Pineapple and Cheese",
       "website": "https://www.youtube.com/watch?v=P9Iqri1OHd4",
-      "image": "/stories/valentin.png"
+      "image": "/stories/valentin.png",
+      "audio": "/audio/felizdia.mp3"
     },
     {
       "id": "c8",
       "name": "Veo la primavera",
       "description": "Realizado por Krista Hine de Pineapple and Cheese",
       "website": "https://www.youtube.com/watch?v=spE7JQHC9Zw",
-      "image": "/stories/Primavera.png"
+      "image": "/stories/Primavera.png",
+      "audio": "/audio/veolaprimavera.mp3"
     },
     {
       "id": "c9",
       "name": "Historia de la Pascua",
       "description": "Realizado por Krista Hine de Pineapple and Cheese",
       "website": "https://youtu.be/RONMK52bc8w",
-      "image": "/stories/pascua.jpg"
+      "image": "/stories/pascua.jpg",
+      "audio": "/audio/historiade.mp3"
     },
     {
       "id": "c10",
       "name": "Mi conejo de Pascua",
       "description": "Realizado por ASDB Deaf Mentor Program",
       "website": "https://www.youtube.com/watch?v=4PJhGhRublE",
-      "image": "/stories/conejo.png"
+      "image": "/stories/conejo.png",
+      "audio": "/audio/miconejo.mp3"
     },
     {
       "id": "c11",
       "name": "Todos hacemos caca",
       "description": "Realizado por Dorinda Davidson",
       "website": "https://youtu.be/k3RtcrTMl-Q?si=yVhL2S9YAnFtw4sz",
-      "image": "/stories/caca.png"
+      "image": "/stories/caca.png",
+      "audio": "/audio/todosdd.mp3"
     },
     {
       "id": "c12",
       "name": "Todos hacemos caca",
       "description": "Realizado por Carlos Gomez",
       "website": "https://youtu.be/W8fJHacPZbw",
-      "image": "/stories/caca.png"
+      "image": "/stories/caca.png",
+      "audio": "/audio/todoscg.mp3"
     },
     {
       "id": "c13",
       "name": "Lindo Bebécito",
       "description": "Realizado por About Love and Language",
       "website": "https://youtu.be/iZU9UJeOjOU",
-      "image": "/stories/lindo.png"
+      "image": "/stories/lindo.png",
+      "audio": "/audio/lindo.mp3"
     },
     {
       "id": "c14",
       "name": "Una chica como Ananya",
       "description": "Realizado por Celena Ponce",
       "website": "https://youtu.be/ce7ftN5dVJs",
-      "image": "/stories/Ananaya.png"
+      "image": "/stories/Ananaya.png",
+      "audio": "/audio/unachica.mp3"
     },
     {
       "id": "c15",
       "name": "Spot ama a su mamá",
       "description": "Realizado por Krista Hine de Pineapple and Cheese",
       "website": "https://youtu.be/TzYfajBnCAQ",
-      "image": "/stories/amar.png"
+      "image": "/stories/amar.png",
+      "audio": "/audio/spotama.mp3"
     },
     {
       "id": "c16",
       "name": "Carta a Santa",
       "description": "Realizado por Krista Hine de Pineapple and Cheese",
       "website": "https://youtu.be/dF6BNQTqHjA",
-      "image": "/stories/carta.png"
+      "image": "/stories/carta.png",
+      "audio": "/audio/cartaa.mp3"
     }
   ]
   

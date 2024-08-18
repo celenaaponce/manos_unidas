@@ -12,14 +12,14 @@ export default function Clases() {
         <div className={classes.hero}>
         <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/registrarpara.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>
             Registrar para clases gratuitas
           </h1>
           <p>
-            Información de clases en las siguentes semanas.  <Link href="/ASL/Clases/Signup">Haga clic aqui</Link> para ponerse en 
+            Información de clases en las siguientes semanas.  <Link href="/ASL/Clases/Signup">Haga clic aquí</Link> para ponerse en 
             nuestra lista de contactos.
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function Clases() {
         <div className={classes.hero}>
         <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/mirarlas.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Mirar las clases grabadas</h1>

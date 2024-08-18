@@ -3,7 +3,7 @@ import Image from "next/image";
 import AudioPlayer from "components/audioPlayer/audioPlayer";
 import classes from "./grid-item.module.css";
 
-export default function GridItem({ id, name, description, image, alt = null, website = null }) {
+export default function GridItem({ id, name, description, image, alt = null, website = null, audio=null }) {
   return (
     <article className={classes.grid}>
       <header>
@@ -15,7 +15,7 @@ export default function GridItem({ id, name, description, image, alt = null, web
                     alignSelf: "flex-end",
                     marginBottom: ".5rem"
                   }}
-            src="/audio/Empezando.mp3"
+            src={audio}
           />
           <Image src={image} alt={name} width={250} height={250} />
         </div>

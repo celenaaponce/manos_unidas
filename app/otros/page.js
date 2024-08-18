@@ -6,20 +6,20 @@ import AudioPlayer from "components/audioPlayer/audioPlayer";
 export default function Otros() {
   return (
     <>
-      <AudioPlayer className={classes.audioPlayer} src="/audio/Empezando.mp3" style={{marginLeft:"5rem"}}/>
+      <AudioPlayer className={classes.audioPlayer} src="/audio/serviciosgratuitos.mp3" style={{marginLeft:"5rem"}}/>
       <h2 className={classes.section}>servicios actuales gratuitos</h2>
       <p className={classes.section}>
         Todos nuestros servicios son exclusivos para padres que participan en
-        nuestras clases de ASL o estan partes de una de nuestras organizaciones
+        nuestras clases de ASL o están partes de una de nuestras organizaciones
         asociadas. Para inscribirse en nuestras clases{" "}
-        <Link href={"/ASL/Clases"}>haga click aqui.</Link>
+        <Link href={"/ASL/Clases"}>haga click aquí.</Link>
       </p>
       <header className={classes.header}>
         {/* Row 1 */}
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/talleres.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Talleres</h1>
@@ -50,7 +50,7 @@ export default function Otros() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/desarrollo.mp3"
             style={{marginLeft:"-5rem"}}
           />
 
@@ -63,12 +63,12 @@ export default function Otros() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/conexionescon.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Conexiones con Otras Agencias</h1>
           <p>
-            Ayudamos encontrar apoyoo para escuela, aseguranza, abogados,
+            Ayudamos encontrar apoyo para escuela, aseguranza, abogados,
             tecnología y otros recursos que se puede necesitar.
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function Otros() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/educacionpara.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Educación para conductores</h1>
@@ -120,7 +120,7 @@ export default function Otros() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/pubertad.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Pubertad y Desarrollo</h1>
@@ -134,7 +134,7 @@ export default function Otros() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/tecnologia.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Tecnología</h1>
@@ -158,12 +158,12 @@ export default function Otros() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/defensade.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Defensa de los inmigrantes</h1>
           <p>
-            Apoyar familias en su proceso de inmigracion. Ayudar familias
+            Apoyar familias en su proceso de inmigración. Ayudar familias
             encontrar abogados y entender el proceso de su caso.
           </p>
         </div>

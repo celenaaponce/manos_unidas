@@ -12,7 +12,7 @@ export default function Ayudar() {
         <div className={classes.hero}>
         <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/teacherspay.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1><Link href={'https://www.teacherspayteachers.com/store/spanish-asl-resources'}>Teachers Pay Teachers</Link></h1>
@@ -42,7 +42,7 @@ export default function Ayudar() {
         <div className={classes.hero}>
         <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/Empezando.mp3"
+            src="/audio/donacion.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>Donación</h1>

@@ -1,4 +1,5 @@
 import MainHeader from "../components/main-header/main-header"
+import Footer from "../components/main-footer/main-footer";
 import "./globals.css";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <MainHeader />
         <div className='content-wrapper'>{children}</div>
+        <Footer/>
       </body>
     </html>
   );
