@@ -62,7 +62,7 @@ export default function Home() {
           <h2>Nuestra Misión</h2>
           <p>
             La misión de Manos Unidas es ayudar a disminuir la prevalencia de la
-            privación lingüística entre los niños sordos y con dificultades
+            privación de lenguaje entre los niños sordos y con dificultades
             auditivas de familias inmigrantes. Reconocemos que las barreras
             lingüísticas y culturales representan una gran parte de la razón por
             la que las familias inmigrantes son incapaces de comunicarse con sus
