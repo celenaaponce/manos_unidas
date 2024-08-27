@@ -14,6 +14,7 @@ export async function POST(request) {
     contact: data.acquisition,
     dhh: data.dhh,
   }); // Call your function to create an item
+  console.log(id)
   return NextResponse.json({ id });
 }
 
