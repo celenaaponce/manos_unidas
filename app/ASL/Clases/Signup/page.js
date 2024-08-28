@@ -7,8 +7,10 @@ export default function Page() {
   const [noState, setNoState] = useState(false);
   const [noContact, setNoContact] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [submit, setSubmit] = useState(false);
   const router = useRouter();
   async function onSubmit(event) {
+    setSubmit(true);
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -142,7 +144,7 @@ export default function Page() {
       {success && (
         <p className="success-message">🎉🎉¡Registro exitoso! Redirigiendo...🎉🎉</p>
       )}
-      {!success && (<p>Haga el favor de intentarlo otra vez por favor.</p>)}
+      {!success && submit && (<p>Haga el favor de intentarlo otra vez por favor.</p>)}
     </form>
   );
 }
