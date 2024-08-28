@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
+import emailjs from '@emailjs/browser';
 export default function Page() {
   const [noName, setNoName] = useState(false);
   const [noLast, setNoLast] = useState(false);
@@ -9,11 +10,13 @@ export default function Page() {
   const [success, setSuccess] = useState(false);
   const [submit, setSubmit] = useState(false);
   const router = useRouter();
+
+
   async function onSubmit(event) {
     setSubmit(true);
     event.preventDefault();
-
-    const formData = new FormData(event.target);
+    const formElement = event.target;
+    const formData = new FormData(formElement);
     const acquisitionChannel = formData.getAll("acquisition");
 
     const input_data = Object.fromEntries(formData.entries());
@@ -36,6 +39,13 @@ export default function Page() {
       return;
     }
     try {
+      emailjs.sendForm('service_z30loik', 'template_bt0wb1r', formElement, 
+      'K9S957DKRD9NM3VeM')
+        .then((result) => {
+            console.log('resultemail', result);
+        }, (error) => {
+            console.log('resultemail', error);
+        });
       const response = await fetch("/ASL/Clases/Signup/api/submit", {
         method: "POST",
         body: JSON.stringify(input_data),

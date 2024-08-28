@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@next/codemod": "^15.0.0-canary.63",
     "@nextui-org/react": "^2.4.2",
     "@notion-render/bookmark-plugin": "^0.0.2",
