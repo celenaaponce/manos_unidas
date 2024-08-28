@@ -41,6 +41,7 @@ export default function Page() {
           "Content-Type": "application/json",
         },
       });
+      console.log(response)
 
       if (response.ok) {
         setSuccess(true); // Show success message
@@ -141,6 +142,7 @@ export default function Page() {
       {success && (
         <p className="success-message">🎉🎉¡Registro exitoso! Redirigiendo...🎉🎉</p>
       )}
+      {!success && (<p>Haga el favor de intentarlo otra vez por favor.</p>)}
     </form>
   );
 }
