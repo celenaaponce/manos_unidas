@@ -8,7 +8,7 @@ export default function DictionaryPage() {
       <header className={classes.header}></header>
       <main className={classes.main}>
 
-        <h2>Diccionario con más que 800 señas en Español y ASL</h2>
+        <h2>Diccionario con más de 800 señas en Español y ASL</h2>
         <div className={classes.cta}>
           <div className={classes.container}>
             <ul>
