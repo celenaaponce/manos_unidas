@@ -15,10 +15,10 @@ export default function Ayudar() {
             src="/audio/teacherspay.mp3"
             style={{marginLeft:"-5rem"}}
           />
-          <h1><Link href={'https://www.teacherspayteachers.com/store/spanish-asl-resources'}>Teachers Pay Teachers</Link></h1>
+          <h1><Link href={'https://www.teacherspayteachers.com/store/manos-unidas'}>Teachers Pay Teachers</Link></h1>
           <p>
             Se puede comprar nuestras productos de 
-            <Link href={'https://www.teacherspayteachers.com/store/spanish-asl-resources'}> TeachersPayTeachers.</Link>   Todos los beneficios se destinan a Manos Unidas.
+            <Link href={'https://www.teacherspayteachers.com/store/manos-unidas'}> TeachersPayTeachers.</Link>   Todos los beneficios se destinan a Manos Unidas.
           </p>
         </div>
         <div className={classes.imageContainer}>
