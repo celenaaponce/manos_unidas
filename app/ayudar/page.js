@@ -47,7 +47,7 @@ export default function Ayudar() {
           />
           <h1>Donación</h1>
           <p>
-          Su donación ayudará a ofrecer servicios a familias inmigrantes con niños sordos o con dificultades auditivas. Información disponible en las siguientes semanas. 
+          Su donación ayudará a ofrecer servicios a familias inmigrantes con niños sordos o con dificultades auditivas. <a href="https://www.zeffy.com/donation-form/57ca7f10-b049-41ee-b3a4-736f5e3d0ace" target="_blank">Haga clic aqui para donar.</a> 
           </p>
         </div>
       </header>
