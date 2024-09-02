@@ -1,22 +1,44 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "./icon.png";
 import classes from "./page.module.css";
 import AudioPlayer from "components/audioPlayer/audioPlayer";
+import Popup from "components/popup/Popup";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [isFirstVisit, setIsFirstVisit] = useState(false);
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem('hasVisited');
+    if (!hasVisited) {
+      setIsFirstVisit(true);
+      localStorage.setItem("hasVisited", "true");
+    }
+  }, []);
+
+  const handleClosePopup = () => {
+    setIsFirstVisit(false);
+  };
   return (
     <>
       <header className={classes.header}>
+        <div>{isFirstVisit && <Popup onClose={handleClosePopup} />}</div>
         <div className={classes.slideshow}>
-          <Image src={logo} width={300} height={300} alt="manos unidas logo"></Image>
+          <Image
+            src={logo}
+            width={300}
+            height={300}
+            alt="manos unidas logo"
+          ></Image>
         </div>
         <div>
           <div className={classes.hero}>
             <AudioPlayer
               className={classes.audioPlayer}
               src="/audio/ManosUnidasApoyando.mp3"
-              style={{marginLeft:"-1rem"}}
+              style={{ marginLeft: "-1rem" }}
             />
             <h1>Manos Unidas</h1>
 
