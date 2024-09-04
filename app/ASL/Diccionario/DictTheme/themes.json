@@ -22,13 +22,13 @@
       "id": "t35",
       "theme": "todo",
       "image": "/categories/school.png",
-      "search": "Bravo 7, Bravo 8"
+      "search": "Bravo 7"
     },
     {
       "id": "t36",
       "theme": "todo",
       "image": "/categories/basic2.png",
-      "search": "Numeros, Bravo 6, Alfabeto, Bravo 8"
+      "search": "Numeros, Bravo 6, Alfabeto"
     },
     {
       "id": "t37",
@@ -211,18 +211,6 @@
       "search": "Dia de Accion de Gracias"
     },
     {
-      "id": "t29",
-      "theme": "matematicas (bravo 8)",
-      "image": "/themes/math.png",
-      "search": "Bravo 8"
-    },
-    {
-      "id": "t30",
-      "theme": "banco (bravo 9)",
-      "image": "/themes/bank.png",
-      "search": "Bravo 9"
-    },
-    {
       "id": "t31",
       "theme": "plano de casa",
       "image": "/themes/interior2.png",
@@ -250,13 +238,13 @@
     },
     {
       "category": "escuela",
-      "ids": ["t12", "t29", "t35"],
+      "ids": ["t12", "t35"],
       "image": "/categories/school.png",
       "id": "c4"
     },
     {
       "category": "números y letras",
-      "ids": ["t30", "t29", "t10", "t11", "t17", "t36"],
+      "ids": ["t10", "t11", "t17", "t36"],
       "image": "/categories/basic2.png",
       "id": "c5"
     },
