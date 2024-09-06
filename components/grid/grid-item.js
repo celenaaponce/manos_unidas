@@ -28,7 +28,8 @@ export default function GridItem({ id, name, description, image, alt = null, web
         <div className={classes.cta}>
           {!alt && !website && <Link href={`/ASL/${name}`}>Ver {name}</Link>}
           {!website && alt && <Link href={`/ASL/${name}`}>{alt}</Link>}
-          {website && <a target="_blank" href={website}>Ver {name}</a>}
+          {website && alt && <a target="_blank" href={website}>{alt}</a>}
+          {website && !alt && <a target="_blank" href={website}>Ver {name}</a>}
         </div>
       </div>
     </article>

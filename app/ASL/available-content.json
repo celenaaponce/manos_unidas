@@ -19,7 +19,8 @@
     "description": "Entrar para recursos de sus clases",
     "image": "/images/enter2.png",
     "alt": "Entrar a su clase",
-    "audio": "/audio/entrarentrar.mp3"
+    "audio": "/audio/entrarentrar.mp3",
+    "website": "https://handsunited.moodlecloud.com/"
   },
   {
     "id": "m4",
