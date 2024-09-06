@@ -6,12 +6,14 @@ import classes from "./page.module.css";
 import AudioPlayer from "components/audioPlayer/audioPlayer";
 import Popup from "components/popup/Popup";
 import { useState, useEffect } from "react";
+import { Document } from "react-pdf";
+import PDFViewer from "components/pdfviewer/PDFViewer";
 
 export default function Home() {
   const [isFirstVisit, setIsFirstVisit] = useState(false);
 
   useEffect(() => {
-    const hasVisited = localStorage.getItem('hasVisited');
+    const hasVisited = localStorage.getItem("hasVisited");
     if (!hasVisited) {
       setIsFirstVisit(true);
       localStorage.setItem("hasVisited", "true");
@@ -55,6 +57,18 @@ export default function Home() {
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
+          <h2>Activiades de Septiembre</h2>
+          <div className={classes.iframeContainer}>
+            <iframe
+              src="https://drive.google.com/file/d/1ZcE8cjHDBY05JH8BHvH0B4ikaaNYI1Xo/preview"
+              width="100%"
+              height="700px"
+              frameBorder="0"
+              className={classes.iframe}
+            ></iframe>
+          </div>
+        </section>
+        <section className={classes.section}>
           <AudioPlayer
             className={classes.audioPlayer}
             src="/audio/quiensomos.mp3"
@@ -75,7 +89,6 @@ export default function Home() {
             tenemos asociación con organizaciones en 10 estados.
           </p>
         </section>
-
         <section className={classes.section}>
           <AudioPlayer
             className={classes.audioPlayer}
