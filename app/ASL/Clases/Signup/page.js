@@ -70,8 +70,8 @@ export default function Page() {
 
   return (
     <form onSubmit={onSubmit}>
-      <h2>¡Gracias por su interes!</h2>
-      <p>Solo necesitamos un poco informacion de usted</p>
+      <h2>¡Gracias por su interés!</h2>
+      <p>Solo necesitamos un poco de su información</p>
       <div className="control-row">
         <div className="control">
           <label htmlFor="first-name">Nombre</label>
@@ -90,7 +90,7 @@ export default function Page() {
         </div>
       </div>
       <div className="control">
-        <label htmlFor="address">¿Dónde vive usted? 🏠</label>
+        <label htmlFor="address">¿Dónde vive? 🏠</label>
         <input type="text" id="address" name="address" />
         <div className="control-error">
           {noState && <p>Necesita un estado</p>}
@@ -99,7 +99,7 @@ export default function Page() {
       <hr />
 
       <div className="control">
-        <label htmlFor="email">Correo Electronico ✉️</label>
+        <label htmlFor="email">Correo Electrónico ✉️</label>
         <input id="email" type="email" name="email" />
       </div>
 
@@ -108,22 +108,22 @@ export default function Page() {
         <input id="phone" type="phone" name="phone" minLength={10} />
         <div className="control-error">
           {noContact && (
-            <p>Necesita un correo electronico o un numero de telefono</p>
+            <p>Necesita un correo electrónico o un número de teléfono</p>
           )}
         </div>
       </div>
 
       <div className="control">
-        <label htmlFor="phone">¿Usted tiene un hijo sordo?</label>
+        <label htmlFor="phone">¿Tiene un hijo sordo?</label>
         <select id="dhh" name="dhh">
-          <option value="yes">Si 👍🏽</option>
+          <option value="yes">Sí 👍🏽</option>
           <option value="no-pero">No, pero conozco a alguien sordo 👎🏽</option>
           <option value="no">No 👎🏽</option>
         </select>
       </div>
 
       <fieldset>
-        <legend>¿Como debemos contactar usted?</legend>
+        <legend>¿Cómo debemos contactar usted?</legend>
         <div className="control">
           <input type="checkbox" id="text" name="acquisition" value="text" />
           <label htmlFor="text">Texto 💬</label>
@@ -141,7 +141,7 @@ export default function Page() {
             name="acquisition"
             value="correo"
           />
-          <label htmlFor="correo">Correo Electronico ✉️</label>
+          <label htmlFor="correo">Correo Electrónico ✉️</label>
         </div>
       </fieldset>
 
