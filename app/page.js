@@ -6,11 +6,9 @@ import classes from "./page.module.css";
 import AudioPlayer from "components/audioPlayer/audioPlayer";
 import Popup from "components/popup/Popup";
 import { useState, useEffect } from "react";
-import { Document } from "react-pdf";
-import PDFViewer from "components/pdfviewer/PDFViewer";
 
 export default function Home() {
-  const [isFirstVisit, setIsFirstVisit] = useState(false);
+  const [isFirstVisit, setIsFirstVisit] = useState(true);
 
   useEffect(() => {
     const hasVisited = localStorage.getItem("hasVisited");

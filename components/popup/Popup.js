@@ -1,15 +1,12 @@
 import React from 'react';
-import flyer from "./manos unidas.png"
+import flyer from "./diademuertos.png"
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Popup = ({ onClose }) => {
   return (
     <div style={styles.overlay}>
       <div style={styles.popup}>
         <Image src={flyer} height={500}/>
-        <div>
-        <Link href="./ASL/Clases/Signup">Registrar aqui</Link></div>
         <div><button onClick={onClose}>Cerrar</button></div>
       </div>
     </div>
