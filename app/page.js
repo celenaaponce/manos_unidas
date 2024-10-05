@@ -8,7 +8,7 @@ import Popup from "components/popup/Popup";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [isFirstVisit, setIsFirstVisit] = useState(true);
+  const [isFirstVisit, setIsFirstVisit] = useState(false);
 
   useEffect(() => {
     const hasVisited = localStorage.getItem("hasVisited");
