@@ -58,7 +58,7 @@ export default function Home() {
           <h2>Actividades de Octubre</h2>
           <div className={classes.iframeContainer}>
             <iframe
-              src="https://drive.google.com/file/d/1MW5IRFNfHR7Rc_DBxMY2jOqs3m0i9aBx/preview"
+              src="https://drive.google.com/file/d/1GVW9btHVVbbejbEcTVyblggTPvyZOBLF/preview"
               width="100%"
               height="700px"
               frameBorder="0"
