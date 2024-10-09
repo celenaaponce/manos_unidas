@@ -287,7 +287,7 @@
     font-weight: 500;
     border-radius: 0.6em;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     overflow: hidden;
     overflow-wrap: break-word;

@@ -9,10 +9,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const showHeader = children && children.props.childSegment == 'classresources'; // Example condition, modify as per need
+  console.log(children.props.childPropSegment != 'classresources')
   return (
     <html lang="en">
       <body>
-        <MainHeader />
+      {showHeader && <MainHeader />}
         <div className='content-wrapper'>{children}</div>
         <Footer/>
       </body>
