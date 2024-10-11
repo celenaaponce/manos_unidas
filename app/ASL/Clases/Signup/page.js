@@ -70,8 +70,10 @@ export default function Page() {
 
   return (
     <form onSubmit={onSubmit}>
-      <h2>¡Gracias por su interés!</h2>
-      <p>Solo necesitamos un poco de su información</p>
+      <h2>🚨Clases ya empezaron.  Inscríbase sólo si puede comprometerse a ponerse al día con el material anterior. 🚨</h2>
+      <h2>La proxima grupo de clases empezará en febrero de 2025.</h2>
+      <p>¡Gracias por su interés!
+      Solo necesitamos un poco de su información</p>
       <div className="control-row">
         <div className="control">
           <label htmlFor="first-name">Nombre</label>
