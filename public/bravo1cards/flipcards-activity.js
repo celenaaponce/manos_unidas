@@ -1981,7 +1981,7 @@ var $eXeFlipCards = {
             $text.show();
             $text.css({
                 'color': color,
-                'background-color': $eXeFlipCards.hexToRgba(backcolor, 0.70)
+                'background-color': $eXeFlipCards.hexToRgba(backcolor, 0)
             });
 
         } else if (text.length > 0) {
