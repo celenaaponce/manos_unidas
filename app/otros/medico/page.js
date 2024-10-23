@@ -70,10 +70,8 @@ export default function Page() {
 
   return (
     <form onSubmit={onSubmit}>
-      <h2>🚨Clases ya empezaron.  Inscríbase sólo si puede comprometerse a ponerse al día con el material anterior. 🚨</h2>
-      <h2>La proxima grupo de clases empezará en febrero de 2025.</h2>
-      <p>¡Gracias por su interés!
-      Solo necesitamos un poco de su información</p>
+      <h2>Solicitud de ayuda para el seguro médico</h2>
+      <h2>La inscripción para el seguro médico comienza el 1 de noviembre y se cierra el 15 de diciembre.</h2>
       <div className="control-row">
         <div className="control">
           <label htmlFor="first-name">Nombre</label>
@@ -92,7 +90,7 @@ export default function Page() {
         </div>
       </div>
       <div className="control">
-        <label htmlFor="address">¿Dónde vive? 🏠</label>
+        <label htmlFor="address">¿En cual estado vive? 🏠</label>
         <input type="text" id="address" name="address" />
         <div className="control-error">
           {noState && <p>Necesita un estado</p>}
@@ -116,10 +114,9 @@ export default function Page() {
       </div>
 
       <div className="control">
-        <label htmlFor="phone">¿Tiene un hijo sordo?</label>
+        <label htmlFor="phone">¿Tiene seguro medico ahora? ⚕️</label>
         <select id="dhh" name="dhh">
           <option value="yes">Sí 👍🏽</option>
-          <option value="no-pero">No, pero conozco a alguien sordo 👎🏽</option>
           <option value="no">No 👎🏽</option>
         </select>
       </div>
@@ -156,7 +153,6 @@ export default function Page() {
       {success && (
         <p className="success-message">🎉🎉¡Registro exitoso! Redirigiendo...🎉🎉</p>
       )}
-      {!success && submit && (<p>Haga el favor de intentarlo otra vez por favor.</p>)}
     </form>
   );
 }

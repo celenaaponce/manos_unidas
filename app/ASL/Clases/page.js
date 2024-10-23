@@ -19,8 +19,7 @@ export default function Clases() {
             Registrar para clases gratuitas
           </h1>
           <p>
-            Información de clases en las siguientes semanas.  <Link href="/ASL/Clases/Signup">Haga clic aquí</Link> para ponerse en 
-            nuestra lista de contactos.
+            Las proximas clases empiezan en febrero.  
           </p>
         </div>
         <div className={classes.imageContainer}>
