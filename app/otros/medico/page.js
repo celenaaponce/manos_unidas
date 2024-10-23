@@ -46,7 +46,7 @@ export default function Page() {
         }, (error) => {
             console.log('resultemail', error);
         });
-      const response = await fetch("/ASL/Clases/Signup/api/submit", {
+      const response = await fetch("/otros/medico/api/submit", {
         method: "POST",
         body: JSON.stringify(input_data),
         headers: {
