@@ -126,6 +126,14 @@
       "website": "https://youtu.be/dF6BNQTqHjA",
       "image": "/stories/carta.png",
       "audio": "/audio/cartaa.mp3"
+    },
+    {
+      "id": "c17",
+      "name": "¡Somos Muy Fiesteros!",
+      "description": "Creado por IDRT",
+      "link": "Cuentos/tradiciones",
+      "image": "/stories/celebratemexican.jpg",
+      "audio": "/audio/cartaa.mp3"
     }
   ]
   
