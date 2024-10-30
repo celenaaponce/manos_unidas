@@ -48,7 +48,7 @@ export default function Home() {
             </p>
           </div>
           <div className={classes.cta}>
-            <Link href="/ASL">Aprender Lengua de Señas Americana</Link>
+          <a href="https://handsunitedor.org/">See in English</a>
             <Link href="/otros">Otros Servicios</Link>
           </div>
         </div>
