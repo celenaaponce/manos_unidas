@@ -55,10 +55,10 @@ export default function Home() {
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
-          <h2>Actividades de Octubre</h2>
+          <h2>Actividades de Noviembre</h2>
           <div className={classes.iframeContainer}>
             <iframe
-              src="https://drive.google.com/file/d/1GVW9btHVVbbejbEcTVyblggTPvyZOBLF/preview"
+              src="https://drive.google.com/file/d/1vde_5jZPy29RxwtM4-e4s-5VafyEab9X/preview"
               width="100%"
               height="700px"
               frameBorder="0"
