@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <header className={classes.header}>
-        <div>{isFirstVisit && <Popup onClose={handleClosePopup} />}</div>
+        {/* <div>{isFirstVisit && <Popup onClose={handleClosePopup} />}</div> */}
         <div className={classes.slideshow}>
           <Image
             src={logo}
