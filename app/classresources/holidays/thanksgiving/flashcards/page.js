@@ -4,7 +4,7 @@ const ExeContent = () => {
   return (
     <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
       <iframe
-        src="/fallcards/index_id.html"
+        src="/thanksgivingcards/index.html"
         style={{ width: '100%', height: '100%', border: 'none' }}
         title="eXeLearning Content"
       />
