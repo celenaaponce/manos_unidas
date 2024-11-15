@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   const showHeader = children && children.props.childSegment == 'classresources'; // Example condition, modify as per need
   return (
     <html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       <body>
       {<MainHeader />}
         <div className='content-wrapper'>{children}</div>
