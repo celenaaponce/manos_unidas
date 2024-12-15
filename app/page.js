@@ -55,10 +55,22 @@ export default function Home() {
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
-          <h2>Actividades de Noviembre</h2>
+          <h2>Actividades de Diciembre</h2>
           <div className={classes.iframeContainer}>
             <iframe
-              src="https://drive.google.com/file/d/1vde_5jZPy29RxwtM4-e4s-5VafyEab9X/preview"
+              src="https://drive.google.com/file/d/1tfuhTtAo9vO8PJ1UebRGh4Pxh35tPgiA/preview"
+              width="100%"
+              height="700px"
+              frameBorder="0"
+              className={classes.iframe}
+            ></iframe>
+          </div>
+        </section>
+        <section className={classes.section}>
+          <h2>Boletín informativo</h2>
+          <div className={classes.iframeContainer}>
+            <iframe
+              src="https://drive.google.com/file/d/1TO9Wc3nRbfz7HETpCD8Enr5mEoWJWKfn/preview"
               width="100%"
               height="700px"
               frameBorder="0"
