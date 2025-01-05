@@ -1,22 +1,36 @@
-import MainHeader from "../components/main-header/main-header"
-import Footer from "../components/main-footer/main-footer";
+"use client";
 import "./globals.css";
-
-export const metadata = {
-  title: "Manos Unidas",
-  description:
-    "Apoyando a las familias latinas con niños sordos o con diferentes niveles auditivas conectar y crecer con su hijo.",
-};
+import PublicLayout from "./public";
+import PrivateLayout from "./resources";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 export default function RootLayout({ children }) {
-  const showHeader = children && children.props.childSegment == 'classresources'; // Example condition, modify as per need
+  const routesConfig = [
+    {
+      path: "/classresources/*",
+      element: <PrivateLayout children={children}/>,
+    },
+    {
+      element: <PublicLayout children={children}/>,
+      children: [
+        {
+          path: "/*",
+        },
+      ],
+    },
+  ];
+  const router = createBrowserRouter(routesConfig);
+  console.log('Layout code is running...');
+  console.log(typeof document);
+  
   return (
     <html lang="en">
-      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      ></meta>
       <body>
-      {<MainHeader />}
-        <div className='content-wrapper'>{children}</div>
-        <Footer/>
+        <RouterProvider router={router} children={children} />
       </body>
     </html>
   );
