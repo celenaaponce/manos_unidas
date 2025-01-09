@@ -1,28 +1,14 @@
-"use client";
+// "use client";
 import "./globals.css";
-import PublicLayout from "./public";
-import PrivateLayout from "./resources";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import dynamic from "next/dynamic";
+
+// Dynamically import RouterProvider to disable SSR
+const ClientRouterProvider = dynamic(
+  () => import("./ClientRouter"), 
+  { ssr: false }
+);
 
 export default function RootLayout({ children }) {
-  const routesConfig = [
-    {
-      path: "/classresources/*",
-      element: <PrivateLayout children={children}/>,
-    },
-    {
-      element: <PublicLayout children={children}/>,
-      children: [
-        {
-          path: "/*",
-        },
-      ],
-    },
-  ];
-  const router = createBrowserRouter(routesConfig);
-  console.log('Layout code is running...');
-  console.log(typeof document);
-  
   return (
     <html lang="en">
       <meta
@@ -30,7 +16,8 @@ export default function RootLayout({ children }) {
         content="width=device-width, initial-scale=1"
       ></meta>
       <body>
-        <RouterProvider router={router} children={children} />
+        {/* Use ClientRouterProvider to handle routes */}
+        <ClientRouterProvider>{children}</ClientRouterProvider>
       </body>
     </html>
   );
