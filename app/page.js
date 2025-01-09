@@ -48,7 +48,7 @@ export default function Home() {
             </p>
           </div>
           <div className={classes.cta}>
-          <a href="https://handsunitedor.org/">See in English</a>
+            <a href="https://handsunitedor.org/">See in English</a>
             <Link href="/otros">Otros Servicios</Link>
           </div>
         </div>
@@ -57,25 +57,23 @@ export default function Home() {
         <section className={classes.section}>
           <h2>Actividades de Enero</h2>
           <div className={classes.iframeContainer}>
-            <iframe
+          <embed
               src="https://drive.google.com/file/d/1lNujXxOpRlm8qilRr9-KTTbKKUFIMsiW/preview"
+              type="application/pdf"
               width="100%"
               height="700px"
-              frameBorder="0"
-              className={classes.iframe}
-            ></iframe>
+            />
           </div>
         </section>
         <section className={classes.section}>
           <h2>Boletín informativo</h2>
           <div className={classes.iframeContainer}>
-            <iframe
+            <embed
               src="https://drive.google.com/file/d/15jJ3YbwEI0qKfLoEylqbD88owQjh7Xrg/preview"
+              type="application/pdf"
               width="100%"
               height="700px"
-              frameBorder="0"
-              className={classes.iframe}
-            ></iframe>
+            />
           </div>
         </section>
         <section className={classes.section}>
