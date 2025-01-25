@@ -98,15 +98,15 @@ export default function MainHeader() {
             </Dropdown>
             {/* <li className={classes.item}> */}
             <NavbarItem isActive>
-              <Link href="/otros" aria-current="page" className={classes.link}>
-                Otros Servicios
+              <Link href="/inmigracion" aria-current="page" className={classes.link}>
+                Inmigración
               </Link>
             </NavbarItem>
             {/* </li> */}
             {/* <li className={classes.item}> */}
             <NavbarItem>
-              <Link href="/ayudar" aria-current="page" className={classes.link}>
-                Cómo Ayudar
+              <Link href="/otros" aria-current="page" className={classes.link}>
+                Otros Servicios
               </Link>
             </NavbarItem>
             {/* </li> */}

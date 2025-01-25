@@ -81,11 +81,14 @@ export default function Otros() {
             
           />
         </div>
-      </header>
-
-      <h2 className={classes.section}>Servicios Futuros</h2>
-      <header className={classes.header}>
-        {/* Row 3 */}
+        <div className={classes.imageContainer}>
+          <Image
+            src="/others/drive.png"
+            alt="manejar"
+            width={300}
+            height={300}
+          />
+        </div>
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
@@ -98,14 +101,13 @@ export default function Otros() {
             reglas de manejar y cómo manejar con seguridad.
           </p>
         </div>
-        <div className={classes.imageContainer}>
-          <Image
-            src="/others/drive.png"
-            alt="manejar"
-            width={300}
-            height={300}
-          />
-        </div>
+
+      </header>
+
+      <h2 className={classes.section}>Servicios Futuros</h2>
+      <header className={classes.header}>
+        {/* Row 3 */}
+
 
         {/* Row 4 */}
         <div className={classes.imageContainer}>
@@ -168,6 +170,8 @@ export default function Otros() {
           </p>
         </div>
       </header>
+      <AudioPlayer className={classes.audioPlayer} src="/audio/serviciosgratuitos.mp3" style={{marginLeft:"5rem"}}/>
+      <h1 className={classes.section}><Link href={"/otros/ayudar"}>Apoyar nuestras metas</Link></h1>
     </>
   );
 }
