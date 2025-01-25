@@ -12,7 +12,7 @@ export default function Inmigracion() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/teacherspay.mp3"
+            src="/audio/derechos.mp3"
             style={{ marginLeft: "-5rem" }}
           />
           <h1>Conozca Sus Derechos</h1>
@@ -50,7 +50,7 @@ export default function Inmigracion() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/donacion.mp3"
+            src="/audio/notario.mp3"
             style={{ marginLeft: "-5rem" }}
           />
           <h1>Notario Fraude</h1>
@@ -67,7 +67,7 @@ export default function Inmigracion() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/teacherspay.mp3"
+            src="/audio/emergencia.mp3"
             style={{ marginLeft: "-5rem" }}
           />
           <h1>Plan de Emergencia</h1>
@@ -105,7 +105,7 @@ export default function Inmigracion() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/donacion.mp3"
+            src="/audio/tutela.mp3"
             style={{ marginLeft: "-5rem" }}
           />
           <h1>Tutela de reserva</h1>
@@ -136,7 +136,7 @@ export default function Inmigracion() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/donacion.mp3"
+            src="/audio/ciudadanía.mp3"
             style={{ marginLeft: "-5rem" }}
           />
           <h1>
@@ -160,7 +160,7 @@ export default function Inmigracion() {
         <div className={classes.hero}>
           <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/teacherspay.mp3"
+            src="/audio/riley.mp3"
             style={{ marginLeft: "-5rem" }}
           />
           <h1>La Ley Laken Riley aprobada en el Congreso</h1>
