@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className={classes.cta}>
           <a href="https://handsunitedor.org/">See in English</a>
-          <Link href="/otros">Otros Servicios</Link>
+          <Link href="/inmigracion">Inmigración</Link>
         </div></div>
       </header>
       <main className={classes.main}>

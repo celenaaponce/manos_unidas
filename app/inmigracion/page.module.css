@@ -10,41 +10,10 @@ h2.section  {
     -webkit-text-fill-color: transparent;
 }
 
-h1.section {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: #0072b2; /* Add a specific underline color */
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #0072b2, #56b4e9);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-p.section a {
-  color: #56b4e9; /* Optional: Set the default color for links */
-  text-decoration: none; /* Optional: Remove underline */
-  cursor: pointer; /* Show hand cursor on hover */
-}
-
-p.section a:visited {
-  color: #56b4e9; /* Keep visited links in the same color */
-}
-
-p.section a:hover {
-  text-decoration: underline; /* Optional: Add underline on hover */
-}
-
-p.section {
+.sub p {
   color: #ddd6cb;
-  font-size: 1.75rem;
-  margin: 3rem;
-}
-
-p.section a:visited {
-  color: #56b4e9;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .header {
@@ -81,6 +50,12 @@ p.section a:visited {
     color: #ddd6cb;
   }
   
+  .hero a:visited {
+    color: #56b4e9
+  }
+  .hero a{
+    color: #56b4e9
+  }
   /* General image container styling */
   .imageContainer {
     display: flex;
@@ -89,12 +64,15 @@ p.section a:visited {
     margin-top: -3rem;
   }
 
- .imageContainer img{
-    width: 60%;
+  .imageContainer img{
+    width: 40%;
     height: auto;
   }
-  
-
+  .imageContainer img .Large{
+    width: 60%;
+    display: flex;
+    height: auto;
+  }
   /* Align images to the left for odd rows (1st, 3rd, etc.) */
   .header .imageContainer:nth-of-type(odd) {
     justify-content: flex-end;
@@ -105,7 +83,6 @@ p.section a:visited {
   .header .imageContainer:nth-of-type(even) {
     justify-content: flex-start;
   }
-  
   @media (max-width: 1024px) {
     .hero,
     .heroRight,
@@ -128,17 +105,16 @@ p.section a:visited {
     }
   
     h2.section {
-      font-size: 1.75rem; /* Slightly smaller for smaller screens */
+      font-size: 1.5rem; /* Slightly smaller for smaller screens */
     }
 
     p.section {
       font-size: 1rem;
     }
-
+  
     .imageContainer img{
       width: 100%;
       height: auto;
       margin-right: 1rem !important;
     }
-  
   }

@@ -12,14 +12,14 @@ export default function Clases() {
         <div className={classes.hero}>
         <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/registrarpara.mp3"
+            src="/audio/reg.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>
             Registrar para clases gratuitas
           </h1>
           <p>
-            Las proximas clases empiezan en febrero.  
+            Registrese <Link href={'https://celenaponce.aidaform.com/clases-de-asl'}>aqui</Link> 
           </p>
         </div>
         <div className={classes.imageContainer}>
