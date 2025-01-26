@@ -5,7 +5,9 @@ import logo from "./icon.png";
 import classes from "./page.module.css";
 import AudioPlayer from "components/audioPlayer/audioPlayer";
 import Popup from "components/popup/Popup";
+import PDFViewer from "./viewer";
 import { useState, useEffect } from "react";
+
 export default function Home() {
   const [isFirstVisit, setIsFirstVisit] = useState(false);
 
@@ -36,26 +38,44 @@ export default function Home() {
             src="/audio/ManosUnidasApoyando.mp3"
             className={classes.audioPlayer}
           />
-          <div><h1>Manos Unidas</h1>
-          <p>
-            Apoyando a las familias latinas con niños sordos o con dificultades
-            auditivas conectar y crecer con su hijo.
-          </p>
+          <div>
+            <h1>Manos Unidas</h1>
+            <p>
+              Apoyando a las familias latinas con niños sordos o con
+              dificultades auditivas conectar y crecer con su hijo.
+            </p>
+          </div>
+          <div className={classes.cta}>
+            <a href="https://handsunitedor.org/">See in English</a>
+            <Link href="/inmigracion">Inmigración</Link>
+          </div>
         </div>
-        <div className={classes.cta}>
-          <a href="https://handsunitedor.org/">See in English</a>
-          <Link href="/inmigracion">Inmigración</Link>
-        </div></div>
       </header>
+      
       <main className={classes.main}>
-        <Section
-          title="Actividades de Enero"
-          src="https://drive.google.com/file/d/1lNujXxOpRlm8qilRr9-KTTbKKUFIMsiW/preview"
-        />
-        <Section
-          title="Boletín informativo"
-          src="https://drive.google.com/file/d/15jJ3YbwEI0qKfLoEylqbD88owQjh7Xrg/preview"
-        />
+      <h2>Calendario de enero</h2>
+        <div>
+        <object
+          data="mypdf.pdf"
+          className={classes.frame}
+          type="application/pdf"
+        >
+          <embed
+            src="https://drive.google.com/file/d/1lNujXxOpRlm8qilRr9-KTTbKKUFIMsiW/preview"
+            className={classes.frame}
+          />
+        </object></div>
+        <h2>Boletín</h2>
+        <object
+          data="mypdf.pdf"
+          className={classes.frame}
+          type="application/pdf"
+        >
+          <embed
+            src="https://drive.google.com/file/d/15jJ3YbwEI0qKfLoEylqbD88owQjh7Xrg/preview"
+            className={classes.frame}
+          />
+        </object>
         <InfoSection
           title="Quien Somos"
           audioSrc="/audio/quiensomos.mp3"
