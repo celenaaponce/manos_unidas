@@ -158,12 +158,15 @@
   .cta {
     font-size: 1rem;
   }
-
   .iframe {
-    height: 300%;
-    zoom: 1; /* Ensure the zoom level is set */
-    page: 1;
+    width: 100%;
+    height: auto;
   }
+  /* .iframe {
+    height: 300%;
+    zoom: 1; 
+    page: 1;
+  } */
 
   .iframeContainer {
     height: 300%;
