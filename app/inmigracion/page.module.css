@@ -48,6 +48,7 @@ h2.section  {
   .heroRight p {
     margin-bottom: 5rem;
     color: #ddd6cb;
+    text-align: left;
   }
   
   .hero a:visited {
