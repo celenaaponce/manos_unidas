@@ -53,7 +53,7 @@ export default function Home() {
       </header>
       
       <main className={classes.main}>
-      <h2>Calendario de enero</h2>
+      <h2>Calendario de febrero</h2>
         <div>
         <object
           data="mypdf.pdf"
@@ -61,7 +61,7 @@ export default function Home() {
           type="application/pdf"
         >
           <embed
-            src="https://drive.google.com/file/d/1lNujXxOpRlm8qilRr9-KTTbKKUFIMsiW/preview"
+            src="https://drive.google.com/file/d/10PFBER5b6WHx8plIaEr24vwJFpZx54h5/preview"
             className={classes.frame}
           />
         </object></div>
@@ -72,7 +72,7 @@ export default function Home() {
           type="application/pdf"
         >
           <embed
-            src="https://drive.google.com/file/d/15jJ3YbwEI0qKfLoEylqbD88owQjh7Xrg/preview"
+            src="https://drive.google.com/file/d/1EeIXktALwItJVBYC7G6UF3gzz1XwjzdF/preview"
             className={classes.frame}
           />
         </object>
