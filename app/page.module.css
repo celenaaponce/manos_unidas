@@ -93,7 +93,7 @@
 
 .frame {
   width: 100%; /* Make the width responsive */
-  height: 30vh; /* Make the height take the full viewport */
+  height: 80vh; /* Make the height take the full viewport */
   border: none; /* Remove any default border */
 }
 
