@@ -53,7 +53,7 @@ export default function Home() {
       </header>
       
       <main className={classes.main}>
-      <h2>Calendario de febrero</h2>
+      <h2>Calendario de marzo</h2>
         <div>
         <object
           data="mypdf.pdf"
@@ -61,11 +61,11 @@ export default function Home() {
           type="application/pdf"
         >
           <embed
-            src="https://drive.google.com/file/d/1qXzUekQ7BNsQNxiC6Csg08LTPH8UG1r6/preview"
+            src="https://drive.google.com/file/1fTsCPBw3XbnMVchaNzjsyU3XER_9y97M/preview"
             className={classes.frame}
           />
         </object></div>
-        <h2>Boletín</h2>
+        {/* <h2>Boletín</h2>
         <object
           data="mypdf.pdf"
           className={classes.frame}
@@ -75,7 +75,7 @@ export default function Home() {
             src="https://drive.google.com/file/d/1D8DQE-rxObYPkd0DQtq9n8ZCUUqHjSJZ/preview"
             className={classes.frame}
           />
-        </object>
+        </object> */}
         <InfoSection
           title="Quien Somos"
           audioSrc="/audio/quiensomos.mp3"
