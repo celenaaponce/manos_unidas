@@ -61,7 +61,7 @@ export default function Home() {
           type="application/pdf"
         >
           <embed
-            src="https://drive.google.com/file/1fTsCPBw3XbnMVchaNzjsyU3XER_9y97M/preview"
+            src="https://drive.google.com/file/d/1fTsCPBw3XbnMVchaNzjsyU3XER_9y97M/preview"
             className={classes.frame}
           />
         </object></div>
