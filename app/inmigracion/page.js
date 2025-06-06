@@ -2,6 +2,8 @@ import Image from "next/image";
 import classes from "./page.module.css";
 import Link from "next/link";
 import AudioPlayer from "components/audioPlayer/audioPlayer";
+import Article from "components/immigrationPart/left";
+import data from "components/immigrationPart/data.json";
 
 export default function Inmigracion() {
   return (
@@ -124,8 +126,879 @@ export default function Inmigracion() {
             actualidad jurídica de CLINIC <br />
             (Red Católica de Inmigración Legal, Inc.)
           </h2>
-          <p>actualizado el 27 de enero 2025</p>
+          <p>actualizado el 10 de mayo 2025</p>
           <p>el más reciente es el primero</p>
+        </div>
+        {/* <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/register.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>Registro de inmigrantes</h1>
+          <p>
+            El 25 de febrero de 2025, el Servicio de Ciudadanía e Inmigración de
+            EE.UU. (USCIS) anunció una nueva política que exige que todos los
+            inmigrantes se registren en el gobierno. Esta política se basa en la
+            sección 262 de la Ley de Inmigración y Nacionalidad (INA) (8 U.S.C.
+            1302), y en la Orden Ejecutiva del 20 de enero de 2025.
+            <br />
+            <br />
+            La INA exige que, con algunas excepciones, todas las personas de 14
+            años o más a las que no se hayan tomado las huellas dactilares o
+            registrado al solicitar un visado estadounidense y que permanezcan
+            en Estados Unidos durante 30 días o más deben solicitar el registro
+            y la toma de huellas dactilares. Además, una vez que el menor cumple
+            14 años debe registrarse. El incumplimiento dará lugar a sanciones
+            penales y civiles, que pueden incluir el procesamiento por delito
+            menor y el pago de multas.
+            <br />
+            <br />
+            La mayoría de los inmigrantes ya se han registrado; sin embargo,
+            para aquellos que no lo han hecho, USCIS está estableciendo un nuevo
+            formulario (Formulario 325R) y proceso. Este proceso será en línea,
+            y USCIS está animando a las personas a crear una cuenta en línea. El
+            registro no es un estatus de inmigración, y la documentación de
+            registro no establece la autorización de empleo o cualquier otro
+            derecho o beneficio.
+            <br />
+            <br />
+            Las personas inscritas mayores de 18 años deben llevar consigo una
+            prueba de su inscripción.
+            <br />
+            <br />
+            ¿Quién está ya registrado?
+            <br />
+            <br />
+            Los residentes legales permanentes.
+            <br />
+            Inmigrantes en libertad condicional en Estados Unidos en virtud del
+            artículo 212(d)(5) de la INA.
+            <br />
+            Inmigrantes a los que se haya expedido el formulario I-94/I-94W.
+            <br />
+            Inmigrantes a los que se ha expedido un visado antes de su llegada.
+            <br />
+            Inmigrantes en proceso de expulsión.
+            <br />
+            Inmigrantes con documentos de autorización de empleo.
+            <br />
+            Solicitantes de residencia permanente legal mediante formularios
+            designados (por ejemplo, I-485).
+            <br />
+            Titulares de tarjetas de cruce de fronteras.
+            <br />
+            <br />
+            ¿Quién no está registrado?
+            <br />
+            Individuos presentes sin inspección, admisión o libertad
+            condicional.
+            <br />
+            Los visitantes canadienses que entren en puertos terrestres sin
+            pruebas de registro.
+            <br />
+            Individuos que presenten solicitudes no enumeradas en 8 CFR 264.1(a)
+            (DACA o TPS) sin pruebas de registro (sin permiso de trabajo).
+            <br />
+            Exenciones
+            <br />
+            Indios americanos nacidos en Canadá bajo INA 289.
+            <br />
+            La Banda de Indios Kickapoo de Texas bajo la Ley de la Banda de
+            Indios Kickapoo de Texas.
+            <br />
+            <br />
+            ¿Cómo registrarse?
+            <br />
+            La mayoría de los inmigrantes ya se han registrado; sin embargo,
+            para aquellos que no lo han hecho, USCIS está estableciendo un nuevo
+            formulario (Formulario 325R) y proceso. Este proceso será en línea,
+            y USCIS está animando a las personas a crear una cuenta en línea. El
+            registro no es un estatus de inmigración, y la documentación de
+            registro no establece la autorización de empleo o cualquier otro
+            derecho o beneficio. El proceso oficial aún no se ha anunciado.
+            <br />
+            <br />
+            CLINIC seguirá de cerca este anuncio, y USCIS actualizará su sitio
+            web para obtener más información.
+          </p>
+        </div> */}
+        {/* <div className={classes.imageContainerLarge}>
+          <Image
+            src="/immigration/register.png"
+            alt="Register"
+            width={300}
+            height={300}
+          />
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            className={classes.large}
+            src="/immigration/asilo.png"
+            alt="Asilo"
+            width={400}
+            height={400}
+            style={{ marginRight: "10rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/asilo.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            USCIS actualiza los procedimientos para determinar la jurisdicción
+            inicial sobre las solicitudes de asilo de UC
+          </h1>
+          <p>
+            El 24 de febrero de 2025, un memorando de USCIS entró en vigor, la
+            actualización de los procedimientos para la determinación de la
+            jurisdicción inicial sobre las solicitudes de asilo presentadas por
+            niños no acompañados (UC) y la aplicación del acuerdo de solución
+            J.O.P.. Es aplicable a los miembros de la clase J.O.P., así como a
+            otros previamente determinados como UC y ciertos casos en los que
+            aún no se ha hecho una determinación UC. El memorando permanecerá en
+            vigor durante al menos tres años (es decir, hasta al menos el 24 de
+            febrero de 2028).
+            <br />
+            <br />
+            Los profesionales deben tener en cuenta que los procedimientos de
+            este nuevo memorando sustituyen en gran medida las orientaciones
+            anteriores que se publicaron en 2009 y 2013 en relación con la
+            disposición de «jurisdicción inicial» de la Ley William Wilberforce
+            de Reautorización de la Protección de las Víctimas de Trata de 2008
+            (TVPRA).
+            <br />
+            <br />
+          </p>
+        </div> */}
+        <div>
+          {data.map((item, index) => (
+            <Article key={index} {...item} reverse={index % 2 !== 0}/>
+          ))}
+        </div>
+        {/* <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/protected.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>Actualización del litigio sobre zonas protegidas</h1>
+          <p>
+            El 24 de febrero de 2025, un juez federal de Maryland emitió una
+            orden que impide a la administración llevar a cabo acciones de
+            aplicación de las leyes de inmigración en determinadas iglesias,
+            templos y otros lugares de culto. Esta orden sólo se aplica a las
+            instalaciones utilizadas por algunas denominaciones y congregaciones
+            cuáqueras, baptistas y sijs que presentaron la demanda.
+            <br />
+          </p>
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            src="/immigration/protected.png"
+            alt="Unaccompanied"
+            width={300}
+            height={300}
+            style={{ marginLeft: "5rem" }}
+          />
+        </div> */}
+        {/* <div className={classes.imageContainerLarge}>
+          <Image
+            className={classes.large}
+            src="/immigration/trafficking.jpg"
+            alt="EIOR"
+            width={400}
+            height={400}
+            style={{ marginRight: "10rem" }}
+          />
+        </div> */}
+        {/* <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/914.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>Nueva Edición del Formulario I-914</h1>
+          <p>
+            El 24 de febrero de 2025, USCIS anunció que sólo aceptará la edición
+            1/20/25 del Formulario I-914, Solicitud de Estatus de No Inmigrante
+            T, así como todos los formularios adjuntos (I-914A e I-914B). No
+            habrá periodo de gracia de aceptación para la edición del 28/08/24.
+            La fecha de edición se encuentra al final de la página del
+            formulario y de las instrucciones, en formato mm/dd/aa.
+            <br />
+            <br />
+            Los solicitantes que impriman y envíen por correo el formulario
+            I-914 deben asegurarse de que la fecha de edición del formulario y
+            los números de página son visibles en la parte inferior de todas las
+            páginas y de que todas las páginas son de la misma edición del
+            formulario. Si alguna de las páginas del formulario falta o es de
+            una edición diferente, USCIS puede rechazar su formulario.
+            <br />
+            <br />
+            Las diferencias entre las ediciones 8/28/24 y 1/20/25 se refieren
+            únicamente al cambio de todas las referencias de «género» a «sexo»,
+            la eliminación de la opción de «otra identidad de género», y el
+            cambio de «ellos» a «él o ella» cuando se refiere a una persona
+            singular.
+            <br />
+            <br />
+            CLINIC espera que otros formularios de USCIS puedan ser actualizados
+            de manera similar sin período de gracia para hacer estos cambios en
+            cumplimiento de la Orden Ejecutiva 14168.
+            <br />
+            <br />
+            Visite la página web del USCIS para obtener información adicional
+            sobre el formulario I-914.
+          </p>
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/retroceso.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            Orden ejecutiva por la que el inglés se convierte en la lengua
+            oficial de Estados Unidos
+          </h1>
+          <p>
+            El 1 de marzo de 2025, el Presidente firmó una Orden Ejecutiva por
+            la que se designa el inglés como lengua oficial de los Estados
+            Unidos. La Orden Ejecutiva revocó la Orden Ejecutiva 13166 de 2000
+            (Mejorar el acceso a los servicios para las personas con dominio
+            limitado del inglés), sin embargo, los jefes de las agencias no
+            están obligados a modificar, eliminar o detener la producción de
+            documentos, productos u otros servicios preparados u ofrecidos en
+            idiomas distintos del inglés.
+            <br />
+          </p>
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            src="/immigration/english.png"
+            alt="English"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            className={classes.large}
+            src="/immigration/eo.avif"
+            alt="EIOR"
+            width={400}
+            height={250}
+            style={{ marginRight: "10rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/eior.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            Orden ejecutiva: Poner fin a la subvención del contribuyente a la
+            apertura de fronteras
+          </h1>
+          <p>
+            Esta Orden Ejecutiva afirma falsamente que las administraciones
+            anteriores han hecho gastos indebidos de dólares de los
+            contribuyentes en beneficios públicos para inmigrantes no elegibles,
+            lo que resulta en un «incentivo para la inmigración ilegal». Así
+            pues, la OE pretende exigir la identificación y revisión de la
+            financiación federal que pueda utilizarse para promover la
+            inmigración ilegal o apoyar a no ciudadanos no cualificados. La
+            orden exige a los directores de los organismos que garanticen que la
+            financiación federal no se utiliza para promover políticas de
+            santuario y les ordena que adopten medidas para mejorar los sistemas
+            de control de la elegibilidad a fin de garantizar que las
+            prestaciones financiadas por los contribuyentes no se utilizan para
+            apoyar a no ciudadanos que no reúnan los requisitos.
+            <br />
+            <br />
+            En concreto, la orden exige a los responsables de cada agencia
+            ejecutiva que evalúen los programas que permiten a los «extranjeros
+            ilegales» acceder a prestaciones públicas y que tomen medidas para
+            adaptar los programas a la orden y a la interpretación que hace la
+            administración de las leyes federales que prohíben a los no
+            ciudadanos depender de los recursos públicos. En particular, la
+            administración ha utilizado el término «extranjeros ilegales» de
+            forma generalizada para incluir a las poblaciones en situación legal
+            y ha cuestionado específicamente la clasificación de las personas en
+            libertad condicional como «extranjeros cualificados» con derecho a
+            prestaciones públicas.
+            <br />
+            <br />
+            Afirmando que «miles de millones de dólares de los contribuyentes
+            [han sido canalizados a] grupos de izquierda que facilitaron la
+            migración ilegal masiva y proporcionaron servicios legales para
+            impugnar las órdenes de deportación», la orden ordena además que los
+            jefes de las agencias garanticen que la financiación federal
+            otorgada a los estados y localidades no facilite «por diseño o
+            efecto» la inmigración ilegal. CLINIC seguirá de cerca la aplicación
+            de esta orden y sus posibles repercusiones en la financiación de los
+            servicios jurídicos o en la disponibilidad de prestaciones públicas
+            para las personas en libertad condicional y otros no ciudadanos que
+            reúnan los requisitos.
+            <br />
+          </p>
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/retroceso.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>Actualizaciones y consejos relativos a los nacionales afganos</h1>
+          <p>
+            En relación con los refugiados en general:
+            <br />
+            <br />
+            Bajo la Orden Ejecutiva (OE) «Realineando el Programa de Admisión de
+            Refugiados de los Estados Unidos», la administración Trump suspendió
+            el Programa de Admisión de Refugiados de los Estados Unidos (USRAP),
+            deteniendo el procesamiento de refugiados en todas las etapas, desde
+            la remisión de casos hasta la programación de vuelos. A pesar de
+            esto, los defensores aún deben presentar el Formulario I-730 para
+            los beneficios de seguimiento para unirse (FTJ-R) para los derivados
+            de refugiados dentro de los dos años para preservar la elegibilidad,
+            ya que la pausa no afecta el proceso de solicitud con los Servicios
+            de Ciudadanía e Inmigración de los Estados Unidos (USCIS).
+            <br />
+            <br />
+            Actualmente no se permite la llegada de refugiados a Estados Unidos,
+            incluidos los acogidos a los programas P1, P2 y DS-4317. Aunque los
+            refugiados posean documentos de viaje, no se les permite viajar por
+            sí mismos a Estados Unidos para que se les conceda la entrada a su
+            llegada.
+            <br />
+            <br />
+            La OE sugiere que pueden hacerse excepciones, pero no especifica qué
+            casos podrían acogerse a ella ni el procedimiento para solicitar una
+            excepción. CLINIC informará a sus afiliados en cuanto tenga más
+            información.
+            <br />
+            <br />
+            La administración suele referirse a la suspensión como una «pausa
+            temporal». AfghanEvac aconseja esperar y observar durante 1-2 meses
+            para ver qué pasa antes de que los clientes tomen cualquier
+            «decisión que altere sus vidas». En particular, la OE no afecta a la
+            tramitación de las peticiones de asilado FTJ (FTJ-A) o las
+            peticiones I-130 basadas en la familia.
+            <br />
+            <br />
+            En relación con la asistencia de reubicación del equipo CARE para
+            los afganos: La OE «Reevaluación y realineación de la ayuda exterior
+            de EE.UU.» impone una pausa de 90 días en la ayuda exterior al
+            desarrollo de EE.UU., que afecta a la financiación de los programas
+            de reasentamiento de refugiados. Esta pausa interrumpe
+            significativamente los servicios de apoyo a los refugiados,
+            incluidos el alojamiento y la ayuda al reasentamiento, retrasando su
+            integración en Estados Unidos.
+            <br />
+            <br />
+            En virtud de esta OE, desde el 28 de enero de 2025, el gobierno de
+            EE.UU. puso en pausa los vuelos de ayuda a la salida de Afganistán a
+            través de la Oficina del Coordinador de los Esfuerzos de Reubicación
+            de Afganos (CARE). Es posible que el gobierno de EE.UU. pueda
+            reanudar los vuelos para los afganos que no tienen solicitudes
+            USRAP.
+            <br />
+            <br />
+            CARE, sin embargo, todavía está haciendo el trabajo de preparación
+            de los casos y aún no se ha cerrado. Si los individuos en la tubería
+            CARE son contactados por CARE, CLINIC aconseja que todavía deben
+            responder a esos mensajes.
+            <br />
+            <br />
+            A partir del 18 de febrero de 2025, las noticias sugieren que el
+            Departamento de Estado de EE.UU. está considerando cerrar el equipo
+            CARE para abril de 2025. Esta decisión podría afectar hasta a
+            200.000 personas, incluidos aliados afganos y sus familias, que han
+            estado esperando el reasentamiento en Estados Unidos. Sin embargo,
+            no se ha tomado ninguna decisión definitiva sobre el futuro del
+            equipo CARE. Sigue existiendo la posibilidad de que los programas de
+            Inmigrantes Especiales Afganos y de Refugiados queden exentos de
+            estas medidas de recorte de gastos si el Secretario de Estado Rubio
+            aprueba una exención.
+            <br />
+            <br />
+            En relación con la tramitación del visado especial de inmigrante
+            afgano (SIV): Las solicitudes, entrevistas y tramitación del SIV en
+            embajadas y consulados no se verán afectadas por la prohibición de
+            refugiados, ya que no forman parte del Programa de Admisión de
+            Refugiados de EE.UU. (USRAP). En este momento, todas las embajadas y
+            consulados de EE.UU. que ofrecen la tramitación de visados de
+            inmigrante siguen realizando entrevistas y expidiendo visados SIV.
+            <br />
+            <br />
+            La suspensión del USRAP detuvo los vuelos de miles de afganos a los
+            que se les había concedido el SIV, dejándolos varados en países como
+            Afganistán, Pakistán, Qatar y Albania, mientras se enfrentaban a
+            mayores riesgos por parte de los talibanes. Sin embargo, los
+            titulares del VIS aún pueden organizar su propio viaje a Estados
+            Unidos.
+            <br />
+            <br />
+            La congelación de la financiación durante 90 días ha interrumpido
+            los programas de apoyo a los titulares del VIS, incluidos los
+            servicios de alojamiento y reasentamiento, lo que dificulta que los
+            aliados afganos busquen refugio en Estados Unidos.
+            <br />
+            <br />
+            Los informes indican que el CBP ha revocado algunas peticiones SIV,
+            bloqueando potencialmente la entrada de los solicitantes en Estados
+            Unidos. Esto puede ocurrir si una petición se considera inválida o
+            si el solicitante no cumple los requisitos de elegibilidad. CLINIC
+            anima a los afiliados y a los clientes del SIV a consultar los
+            recursos del Proyecto Internacional de Asistencia a los Refugiados
+            (IRAP), incluida la guía para quienes llegan por primera vez a los
+            aeropuertos estadounidenses, en la que se describen los derechos y
+            procedimientos para garantizar un proceso de entrada sin problemas.
+          </p>
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            src="/immigration/afghanistan.jpg"
+            alt="Afghanistan"
+            width={300}
+            height={200}
+          />
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            className={classes.large}
+            src="/immigration/eior.png"
+            alt="EIOR"
+            width={400}
+            height={400}
+            style={{ marginRight: "10rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/eior.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            Memorándum del ICE sobre las medidas de aplicación de la ley que
+            afectan a las víctimas de delitos
+          </h1>
+          <p>
+            La semana pasada, el Director en funciones del ICE publicó un
+            memorando titulado Interim Guidance on Civil Immigration Enforcement
+            Actions Involving Current or Potential Beneficiaries of Victim-Based
+            Immigration Benefits. El memorando detalla el proceso que los
+            agentes del ICE deben seguir cuando se encuentran con personas que
+            son beneficiarias de prestaciones pendientes de inmigración basadas
+            en las víctimas. El memorando establece que:
+            <br />
+            <br />
+            Cuando se encuentren con individuos que son beneficiarios de un
+            beneficio de inmigración basado en víctimas, los agentes de ICE
+            deben consultar a la Oficina del Asesor Jurídico Principal (OPLA) a
+            través de los Directores de las Oficinas de Campo o Agentes
+            Especiales a Cargo antes de llevar a cabo acciones de aplicación de
+            la ley contra los individuos; y
+            <br />
+            <br />
+            Que el ICE ya no solicitará rutinariamente adjudicaciones aceleradas
+            del USCIS. En su lugar, se determinarán caso por caso.
+            <br />
+          </p>
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/retroceso.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            Novedades en el litigio sobre la ciudadanía por derecho de
+            nacimiento
+          </h1>
+          <p>
+            18 de febrero de 2025:
+            <br />
+            <br />
+            El Tribunal de Apelaciones de Estados Unidos para el Noveno Circuito
+            se negó a revocar la orden judicial de un tribunal inferior que
+            bloqueó la orden ejecutiva del presidente Donald Trump que limita la
+            ciudadanía por derecho de nacimiento. El rechazo declaró que el
+            gobierno federal no había hecho una «fuerte demostración de que es
+            probable que tengan éxito en el fondo», como lo requiere la ley.
+            <br />
+            <br />
+            13 de febrero de 2025:
+            <br />
+            <br />
+            El juez de distrito de Massachusetts emite una cuarta medida
+            cautelar a nivel nacional.
+            <br />
+            <br />
+            10 de febrero de 2025:
+            <br />
+            <br />
+            Un juez de distrito de EE.UU. en New Hampshire emitió una tercera
+            orden judicial preliminar a nivel nacional en New Hampshire
+            Indonesian Community Support v. Trump.
+            <br />
+            <br />
+            6 de febrero de 2025:
+            <br />
+            <br />
+            Un juez de distrito de EE.UU. en Seattle emitió una segunda medida
+            cautelar a nivel nacional. Juez Coughenour: «La Constitución no es
+            algo con lo que el gobierno pueda jugar juegos políticos. Si el
+            gobierno quiere cambiar la excepcional concesión estadounidense de
+            la ciudadanía por derecho de nacimiento, necesita enmendar la propia
+            Constitución.»
+            <br />
+            <br />
+            5 de febrero de 2025:
+            <br />
+            <br />
+            Un juez de distrito de EE.UU. en Maryland emitió una orden judicial
+            preliminar a nivel nacional en CASA v. Trump encontrando que la OE
+            contradice la 14ª enmienda y que la ciudadanía por derecho de
+            nacimiento es la ley y la tradición de los Estados Unidos.
+            <br />
+            <br />
+            La medida cautelar es temporal y se espera que la administración
+            recurra. La demanda fue presentada por CASA y Asylum Seeker Advocacy
+            Project (ASAP) en nombre de 5 mujeres embarazadas indocumentadas.
+          </p>
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            src="/immigration/unacc.png"
+            alt="Unaccompanied"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            className={classes.large}
+            src="/immigration/eior.png"
+            alt="EIOR"
+            width={400}
+            height={400}
+            style={{ marginRight: "10rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/eior.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>Se anula parcialmente el TPS para Haití</h1>
+          <p>
+            El Departamento de Seguridad Nacional (DHS, por sus siglas en
+            inglés) anuló parcialmente la notificación del 4 de julio de 2024
+            que extendía y ampliaba la designación del Estatus de Protección
+            Temporal (TPS, por sus siglas en inglés) para Haití. El DHS anulará
+            parcialmente la decisión reduciendo el período de designación de 18
+            meses a 12 meses.
+            <br />
+            <br />
+            En consecuencia, la extensión y ampliación del TPS expirará el 3 de
+            agosto de 2025 (en lugar del 3 de febrero de 2026), y el período de
+            registro por primera vez permanecerá en vigor hasta el 3 de agosto
+            de 2025 (en lugar del 3 de febrero de 2026). USCIS no retirará la
+            documentación relacionada con el TPS que se emitió anteriormente con
+            una fecha de caducidad del 3 de febrero de 2026, y esos documentos
+            seguirán siendo válidos hasta el 3 de agosto de 2025.
+            <br />
+            <br />
+            El DHS debe determinar, antes del 4 de junio de 2025, si extiende o
+            termina la designación del TPS de Haití de 2024. Si el DHS no toma
+            una determinación oportuna, el estatuto prevé una prórroga
+            automática de la designación por 6 meses.
+            <br />
+            <br />
+            USCIS aceptará solicitudes de reinscripción en el TPS de Haití
+            (Formulario I-821) y las correspondientes solicitudes de
+            autorización de empleo (Formulario I-765) hasta el 3 de agosto de
+            2025. El período de reinscripción para los beneficiarios existentes
+            expiró el 30 de agosto de 2024.
+            <br />
+          </p>
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/retroceso.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            El USCIS suspende las solicitudes de inmigración de determinados
+            inmigrantes que entraron en Estados Unidos a través de programas de
+            libertad condicional
+          </h1>
+          <p>
+            Ayer, CBS News informó de que el Servicio de Ciudadanía e
+            Inmigración de EE.UU. (USCIS) ha puesto en pausa todas las
+            adjudicaciones de las solicitudes de inmigración presentadas por
+            personas que entraron en los Estados Unidos bajo ciertos programas
+            de libertad condicional, citando el fraude y las preocupaciones de
+            seguridad. El informe señala que la congelación de las solicitudes
+            permanecerá en vigor indefinidamente mientras los funcionarios
+            trabajan para identificar posibles casos de fraude.
+            <br />
+            <br />
+            Los posibles beneficios que se pondrán en pausa incluyen el Estatus
+            de Protección Temporal, las Solicitudes de Asilo Afirmativo, los
+            Ajustes Cubanos, los Ajustes Familiares, y cualquier otro beneficio
+            solicitado por individuos que fueron puestos en libertad condicional
+            bajo los siguientes programas (según lo atribuido a un portavoz del
+            DHS):
+            <br />
+            <br />
+            Proceso Unidos por Ucrania (U4U);
+            <br />
+            <br />
+            CHNV - Programa para cubanos, haitianos, nicaragüenses y
+            venezolanos; o Proceso de reunificación familiar en libertad
+            condicional.
+            <br />
+            <br />
+            CLINIC continuará supervisando este nuevo desarrollo y proporcionará
+            más información en un futuro próximo.
+          </p>
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            src="/immigration/unacc.png"
+            alt="Unaccompanied"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            className={classes.large}
+            src="/immigration/eior.png"
+            alt="EIOR"
+            width={400}
+            height={400}
+            style={{ marginRight: "10rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/orr.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            ORR Actualiza los Procedimientos de Verificación de Antecedentes y
+            Documentos de Identificación para Patrocinadores, HHM y ACG de Niños
+            No Acompañados
+          </h1>
+          <p>
+            El 14 de febrero de 2025, la Oficina de Reasentamiento de Refugiados
+            (ORR) publicó una guía de campo actualizada sobre los procedimientos
+            de verificación de antecedentes y documentos de identificación para
+            patrocinadores adultos, miembros adultos del hogar (HHM) y
+            cuidadores adultos (ACG) involucrados en el proceso de evaluación de
+            idoneidad para liberar a niños inmigrantes no acompañados de la
+            custodia de ORR. La ORR es responsable del cuidado y la custodia de
+            los menores inmigrantes no acompañados una vez que son detenidos por
+            las autoridades de inmigración.
+            <br />
+            <br />
+            Con efecto inmediato, la ORR
+            <br />
+            <br />
+            Requerir la toma de huellas dactilares de todos los patrocinadores
+            adultos y sus miembros adultos del hogar mayores de 18 años, y los
+            cuidadores adultos identificados en un Plan de Cuidado de
+            Patrocinadores. Todos los posibles patrocinadores, miembros del
+            hogar y cuidadores adultos deben recibir, adjudicar y registrar sus
+            huellas dactilares en el Portal de menores extranjeros no
+            acompañados antes de que se apruebe su liberación.
+            <br />
+            <br />
+            Sólo se aceptan fotocopias legibles y no vencidas de documentos de
+            identificación con el fin de establecer la identidad de acuerdo con
+            la Sección 2.2.4 de la Guía de Políticas para NESA Documentos
+            Requeridos para la Presentación con la Solicitud de Liberación.
+            <br />
+            <br />
+            Requerir que los patrocinadores potenciales, los miembros adultos
+            del hogar y los cuidadores adultos identificados en un plan de
+            cuidado del patrocinador, presenten versiones originales no vencidas
+            (no fotocopias) de los documentos de identificación junto con su
+            Autorización para la Divulgación de Información (ARI) en el Sitio
+            Digital de ORR, FieldPrint u otro sitio designado para el
+            procesamiento de huellas dactilares cuando se presenten para la toma
+            de huellas dactilares. Los patrocinadores también deben presentar
+            los mismos documentos de identificación originales y no vencidos en
+            el momento de la entrega física del menor al patrocinador potencial.
+            <br />
+            <br />
+            ¿Qué significa esto para los menores inmigrantes no acompañados que
+            están bajo custodia de la ORR a la espera de ser entregados a un
+            posible patrocinador?
+            <br />
+            <br />
+            Es probable que las nuevas orientaciones sobre el terreno dificulten
+            aún más que los menores inmigrantes sean puestos en libertad bajo la
+            custodia de la ORR con el fin de reunirse con un patrocinador.
+            <br />
+            <br />
+            Las directrices actualizadas de la ORR sobre el terreno imponen
+            requisitos adicionales de comprobación de antecedentes en
+            comparación con la política anterior, en la que la ORR generalmente
+            no exigía determinadas comprobaciones de antecedentes o incluso
+            pruebas de identidad para los miembros de la familia y los
+            cuidadores adultos cuando el patrocinador era un padre o tutor legal
+            y no había problemas de seguridad. En general, las nuevas
+            directrices también establecen requisitos más estrictos para los
+            documentos de identidad.
+            <br />
+            <br />
+            Anteriormente, los documentos caducados eran aceptables para
+            establecer la identidad. A partir de ahora, se exigirán documentos
+            de identidad con fotografía válidos y no caducados expedidos por el
+            gobierno, y los documentos originales deberán presentarse para su
+            inspección física en varias fases del proceso. Estos cambios hacen
+            más difícil convertirse en patrocinador si las personas que deben
+            participar en el proceso de investigación de antecedentes no pueden
+            cumplir los requisitos de los documentos de identidad.
+            <br />
+            <br />
+            ¿Se aplican estas orientaciones actualizadas a las reagrupaciones en
+            virtud del Acuerdo Sra. L?
+            <br />
+            <br />
+            No. Esta orientación no se aplica a las reunificaciones en virtud de
+            la Sección 2.10 Separaciones de la Guía de políticas sobre menores
+            extranjeros no acompañados en virtud del Acuerdo Sra. L.
+          </p>
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/cambios.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            Cambios en el Manual de Políticas de EOIR y Emisión de Nuevos
+            Memorandos
+          </h1>
+          <p>
+            La Oficina Ejecutiva de Revisión de Inmigración (EOIR) continúa
+            haciendo cambios en la política y los aspectos técnicos. EOIR ha
+            relanzado sus páginas web y documentos electrónicos de los manuales
+            de práctica de los tribunales de inmigración y de la Junta de
+            Apelaciones de Inmigración. El nuevo manual también contiene una
+            serie de memorandos de política emitidos por Sirce E. Owen, Director
+            Interino de EOIR.
+            <br />
+            <br />
+            EOIR emite PM 25-21
+            <br />
+            <br />
+            El 14 de febrero de 2025, EOIR emitió el PM 25-21, rescindiendo el
+            anterior memo DM 22-04. El memo anterior enmendó el PM 21-18,
+            Revised Case Flow Processing Before the Immigration Courts, y el
+            Immigration Court Practice Manual. Como tal, el plazo de
+            presentación de 30 días anterior para los casos no detenidos está
+            ahora en vigor. Los jueces de inmigración conservan la capacidad de
+            establecer sus propios plazos. Además, el memorando aclara que
+            cualquier cambio en los plazos se aplican sólo con carácter
+            prospectivo a los plazos fijados después del cambio. Por lo tanto,
+            los profesionales a los que anteriormente se les emitieron órdenes
+            de programación con plazos de quince días pueden seguir basándose en
+            esas órdenes de programación.
+            <br />
+          </p>
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            src="/immigration/unacc.png"
+            alt="Unaccompanied"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div className={classes.imageContainerLarge}>
+          <Image
+            className={classes.large}
+            src="/immigration/eior.png"
+            alt="EIOR"
+            width={400}
+            height={400}
+            style={{ marginRight: "10rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <AudioPlayer
+            className={classes.audioPlayer}
+            src="/audio/juecesfederales.mp3"
+            style={{ marginLeft: "-5rem" }}
+          />
+          <h1>
+            Jueces federales emiten medidas cautelares en todo el país contra la
+            orden ejecutiva (OE) de Trump para poner fin a la ciudadanía por
+            derecho de nacimiento
+          </h1>
+          <p>
+            13 de febrero de 2025:
+            <br />
+            <br />
+            Una cuarta medida cautelar a nivel nacional fue emitida por un juez
+            de distrito de EE.UU. en Massachusetts.
+            <br />
+            <br />
+            10 de febrero de 2025:
+            <br />
+            <br />
+            Un juez de distrito de EE. UU. en New Hampshire emitió un 3er
+            requerimiento judicial preliminar a nivel nacional en New Hampshire
+            Indonesian Community Support v. Trump.
+            <br />
+            <br />
+            6 de febrero de 2025:
+            <br />
+            <br />
+            Un juez de distrito de EE.UU. en Seattle emitió una segunda medida
+            cautelar a nivel nacional. Juez Coughenour: «La Constitución no es
+            algo con lo que el Gobierno pueda jugar. Si el Gobierno quiere
+            cambiar la excepcional concesión estadounidense de la ciudadanía por
+            derecho de nacimiento, tiene que enmendar la propia Constitución.»
+            <br />
+            <br />
+            5 de febrero de 2025:
+            <br />
+            <br />
+            Un juez de distrito de EE.UU. en Maryland emitió una medida cautelar
+            a nivel nacional en el caso CASA v. Trump, declarando que la OE
+            contradice la 14ª enmienda y que la ciudadanía por derecho de
+            nacimiento es la ley y la tradición de los Estados Unidos.
+            <br />
+            <br />
+            La medida cautelar es temporal y se espera que la administración
+            recurra. La demanda fue presentada por CASA y Asylum Seeker Advocacy
+            Project (ASAP) en nombre de 5 mujeres embarazadas indocumentadas.
+            <br />
+            <br />
+            Otros retos:
+            <br />
+            <br />
+            Al menos 22 fiscales generales estatales interpusieron una demanda
+            para detener la OE. Es probable que los litigios en curso se centren
+            en lo que significa que alguien esté «sujeto a la jurisdicción» de
+            Estados Unidos.
+          </p>
         </div>
         <div className={classes.hero}>
           <AudioPlayer
@@ -891,7 +1764,7 @@ export default function Inmigracion() {
             caso forma parte de otros 5 pleitos interpuestos en todo el país por
             22 estados y grupos de defensa de los derechos de los inmigrantes.
           </p>
-        </div>
+        </div> */}
       </header>
     </>
   );
