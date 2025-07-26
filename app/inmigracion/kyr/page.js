@@ -12,13 +12,18 @@ export default function Inmigracion() {
           alt="Conocer sus derechos"
           width={400}
           height={400}
-          style={{ marginTop: "5rem"}}
+          style={{
+            marginTop: "5rem",
+            width: "100%",
+            height: "auto",
+            maxWidth: "300px",
+          }}
         />
       </div>
       <div>
         <header className={classes.header}>
           <div className={classes.row}>
-            <div className={classes.imageContainer}>
+            <div className={`${classes.imageContainer} ${classes.hideOnSmall}`}>
               <Image
                 className={classes.large}
                 src="/immigration/simple.png"
@@ -28,7 +33,7 @@ export default function Inmigracion() {
                 style={{ marginLeft: "5rem" }}
               />
             </div>
-            <div className={classes.imageContainer}>
+            <div className={`${classes.imageContainer} ${classes.hideOnSmall}`}>
               <Image
                 className={classes.large}
                 src="/immigration/hard.png"
@@ -45,7 +50,7 @@ export default function Inmigracion() {
       <header className={classes.header}>
         <div>
           {data.map((item, index) => (
-            <KYR key={index} {...item} reverse={index % 2 !== 0} />
+            <KYR key={index} {...item} />
           ))}
         </div>
       </header>

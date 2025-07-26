@@ -95,11 +95,14 @@ h2.section  {
 
   }
   
-  /* Align images to the right for even rows (2nd, 4th, etc.) */
   .header .imageContainer:nth-of-type(even) {
     justify-content: flex-start;
   }
+
   @media (max-width: 1024px) {
+      .hideOnSmall {
+    display: none;
+  }
     .hero,
     .heroRight,
     .imageContainer {

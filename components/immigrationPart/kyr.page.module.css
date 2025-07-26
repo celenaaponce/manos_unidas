@@ -1,133 +1,111 @@
-
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-    flex-wrap: wrap; /* optional: stack on small screens */
-  }
-  
-  .reverse {
-    flex-direction: row-reverse;
-  }
-
-h2.section  {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #0072b2, #56b4e9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.sub p {
-  color: #ddd6cb;
-  font-size: 1.5rem;
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
   text-align: center;
 }
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 75rem;
-    margin: 3rem auto;
+.section {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start; /* Changed from space-between */
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Add this new class to force column layout */
+.forceTwoColumns {
+  flex: 1 1 45%;
+  min-width: 300px;
+  max-width: 45%; /* Prevent it from growing too big */
+}
+
+/* imageContainer stays same */
+.imageContainer {
+  flex: 1 1 45%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Ensure iframe and img are styled the same */
+.imageContainer img,
+.imageContainer iframe {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional spacing */
+.imageContainer {
+  margin-bottom: 1rem;
+}
+
+.textContainer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.textContainer p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  color: #555;
+}
+
+/* This class hides an image on small screens */
+.hideOnSmall {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .hideOnSmall {
+    display: none; /* Hide this item on small screens */
   }
-  
-  .hero,
-  .heroRight,
+
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .imageContainer {
-    width: 50%;
+    flex: 1 1 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .imageContainer img,
+  .imageContainer iframe {
+    max-width: 90%;
+  }
+
+  .section {
+    font-size: 2rem;
+  }
+
+  .textContainer h2 {
     font-size: 1.5rem;
   }
-  
-  .hero h1,
-  .heroRight h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #0072b2, #56b4e9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .hero p,
-  .heroRight p {
-    margin-bottom: 5rem;
-    color: #ddd6cb;
-    text-align: left;
-  }
-  
-  .hero a:visited {
-    color: #56b4e9
-  }
-  .hero a{
-    color: #56b4e9
-  }
-  /* General image container styling */
-  .imageContainer {
-    align-items: center;
-    padding: 1rem;
-    margin-top: -3rem;
-  }
 
-  .imageContainer img{
-    width: 40%;
-    height: auto;
+  .textContainer p {
+    font-size: 1rem;
   }
-  .imageContainer img .Large{
-    width: 60%;
-    height: auto;
-  }
-  /* Align images to the left for odd rows (1st, 3rd, etc.) */
-  .header .imageContainer:nth-of-type(odd) {
-    justify-content: flex-end;
-
-  }
-  
-  /* Align images to the right for even rows (2nd, 4th, etc.) */
-  .header .imageContainer:nth-of-type(even) {
-    justify-content: flex-start;
-  }
-  @media (max-width: 1024px) {
-    .hero,
-    .heroRight,
-    .imageContainer {
-      width: 50%; /* Full width on small screens */
-      /* Optionally adjust font-size and padding for better fit */
-    }
-    .header {
-      max-width: 80%;
-    }
-    .hero h1,
-    .heroRight h1 {
-      font-size: 1.1rem; /* Adjust font size for better readability */
-    }
-  
-    .hero p,
-    .heroRight p {
-      font-size: 0.875rem; /* Reduce font size */
-      margin-bottom: 2rem; /* Adjust margin to fit better */
-    }
-  
-    h2.section {
-      font-size: 1.5rem; /* Slightly smaller for smaller screens */
-    }
-
-    p.section {
-      font-size: 1rem;
-    }
-  
-    .imageContainer img{
-      width: 100%;
-      height: auto;
-      margin-right: 1rem !important;
-    }
-  }
+}
