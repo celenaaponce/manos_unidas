@@ -12,7 +12,13 @@ class Footer extends Component {
           <Link href="mailto:Celena<celena.a.ponce@gmail.com>" className={classes.contact}>
           ✉️ Contactar
           </Link>
-          <p className={classes.copyright}>Copyright ©️ {current_year}, Hands United es una organziación 501(c)3</p>
+          <p className={classes.copyright}>Copyright ©️ {current_year}, Hands United is a 501(c)3 organization</p>
+          <Link href="https://www.facebook.com/manosunidasor" className={classes.contact}>
+           ⓕ Facebook
+          </Link>
+          <Link href="https://www.instagram.com/manosunidasor/" className={classes.contact}>
+           Instagram
+          </Link>
         </div>
       </div>
     )

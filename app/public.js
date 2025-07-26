@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata = {
   title: "Manos Unidas",
   description:
-    "Apoyando a las familias latinas con niños sordos o con diferentes niveles auditivas conectar y crecer con su hijo.",
+    "Apoyando a las familias latinas con niños sordos o sordos parciales conectar y crecer con su hijo.",
 };
 
 export default function PublicLayout({ children }) {

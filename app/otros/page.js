@@ -6,7 +6,7 @@ import AudioPlayer from "components/audioPlayer/audioPlayer";
 export default function Otros() {
   return (
     <>
-      <AudioPlayer className={classes.audioPlayer} src="/audio/serviciosgratuitos.mp3" style={{marginLeft:"5rem"}}/>
+      <AudioPlayer className={classes.audioPlayer} src="/audio/serviciosgratuitos.mp3" style={{marginLeft:"40rem"}}/>
       <h2 className={classes.section}>servicios actuales gratuitos</h2>
       <p className={classes.section}>
         Todos nuestros servicios son exclusivos para padres que participan en

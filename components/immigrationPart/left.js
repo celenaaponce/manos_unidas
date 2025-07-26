@@ -24,14 +24,14 @@ const Article = ({ audioSrc, title, text, imageSrc, imageAlt, reverse }) => {
         </p>
       </div>
 
-      <div className={classes.imageContainerLarge}>
+      <div className={classes.imageContainer}>
         <Image
           className={classes.large}
           src={imageSrc}
           alt={imageAlt}
           width={300}
           height={300}
-          style={{ marginLeft: "5rem" }}
+          // style={{ marginLeft: "5rem" }}
         />
       </div>
     </div>

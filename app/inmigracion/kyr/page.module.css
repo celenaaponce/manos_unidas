@@ -1,3 +1,10 @@
+.headerImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
 h2.section  {
     text-align: center;
     font-size: 3rem;
@@ -10,6 +17,14 @@ h2.section  {
     -webkit-text-fill-color: transparent;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap; /* optional: stack on small screens */
+  }
+
 .sub p {
   color: #ddd6cb;
   font-size: 1.5rem;
@@ -17,7 +32,7 @@ h2.section  {
 }
 
 .header {
-    display: flex;
+ 
     flex-wrap: wrap;
     width: 90%;
     max-width: 75rem;
@@ -59,7 +74,7 @@ h2.section  {
   }
   /* General image container styling */
   .imageContainer {
-    display: flex;
+ 
     align-items: center;
     padding: 1rem;
     margin-top: -3rem;
@@ -106,13 +121,13 @@ h2.section  {
     }
   
     h2.section {
-      font-size: 1.75rem; /* Slightly smaller for smaller screens */
+      font-size: 1.5rem; /* Slightly smaller for smaller screens */
     }
 
     p.section {
       font-size: 1rem;
     }
-
+  
     .imageContainer img{
       width: 100%;
       height: auto;
