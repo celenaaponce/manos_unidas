@@ -6,6 +6,12 @@
   max-width: 75rem;
 }
 
+.link {
+  color: #56b4e9;
+  text-decoration: none;
+  font-weight: normal;
+}
+
 .slideshow {
   width: 40rem;
   height: 25rem;
