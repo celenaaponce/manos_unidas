@@ -1,24 +1,23 @@
-// "use client";
+// app/layout.js or app/RootLayout.js
 import "./globals.css";
 import dynamic from "next/dynamic";
 
 // Dynamically import RouterProvider to disable SSR
-const ClientRouterProvider = dynamic(
-  () => import("./ClientRouter"), 
-  { ssr: false }
-);
+const ClientRouterProvider = dynamic(() => import("./ClientRouter"), {
+  ssr: false,
+});
+
+export const metadata = {
+  title: "Manos Unidas",
+  description:
+    "Apoyar a las familias inmigrantes con niños sordos o sordos parciales para que puedan conectar y crecer con sus hijos.",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta
-      title="Manos Unidas"
-      description="Apoyar a las familias inmigrantes con niños sordos o sordos parciales para que puedan conectar y crecer con sus hijos."
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-      ></meta>
+      <head />
       <body>
-        {/* Use ClientRouterProvider to handle routes */}
         <ClientRouterProvider>{children}</ClientRouterProvider>
       </body>
     </html>
