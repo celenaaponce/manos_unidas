@@ -9,7 +9,7 @@ import PDFViewer from "./viewer";
 import { useState, useEffect } from "react";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
-import KYR from "public/immigration/kyr.jpg"
+import KYR from "public/immigration/kyr.jpg";
 
 export default function Home() {
   const [isFirstVisit, setIsFirstVisit] = useState(false);
@@ -54,14 +54,16 @@ export default function Home() {
           </div>
         </div>
       </header>
- <main className={classes.main}>
+      <main className={classes.main}>
+        <AudioPlayer src="/audio/bajar.mp3" className={classes.audioPlayer} />
         <section className={classes.section}>
-          <h2>Bajar nuestra app!</h2>
+          <h2>¡Bajar nuestra app!</h2>
           <div>
             <Link
               href={
                 "https://apps.apple.com/us/app/hands-united-oregon/id6747975975"
-              } style={{color: "#56b4e9"}}
+              }
+              style={{ color: "#56b4e9" }}
             >
               <Image src={iphone} height={50}></Image>Bajar para iPhone
             </Link>
@@ -69,33 +71,54 @@ export default function Home() {
             <Link
               href={
                 "https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share"
-              } style={{color: "#56b4e9"}}
+              }
+              style={{ color: "#56b4e9" }}
             >
               <Image src={android} height={75}></Image>Bajar para Android
             </Link>
           </div>
-          <h2>Tarjeta de conozca sus derechos en lenguajes de señas!</h2>
-          <p>Aquí esta nuestra tarjeta de conozca sus derechos en lenguajes de señas.  Esta página seguirá creciendo a medida que se vayan añadiendo vídeos.</p>
-          <Link href={"/immigracion/kyr"}>
-          <div className={classes.responsiveImageWrapper}><Image src={KYR} width={900}></Image></div></Link>
-          <p>Oprima <a href={"https://drive.google.com/file/d/16daxkMvOyyFnlocwfj4B471exwoMYYn1/view?usp=sharing"} target="_blank" style={{color: "#56b4e9"}}>aquí</a> para bajar el versión para imprimir.</p>
+          <AudioPlayer src="/audio/tarjeta.mp3" className={classes.audioPlayer} style={{marginLeft: "-5rem"}}/>
+          <h2>¡Tarjeta de conozca sus derechos en lenguajes de señas!</h2>
+          <p>
+            Aquí esta nuestra tarjeta de conozca sus derechos en lenguajes de
+            señas. (Haga clic en la imagen para ir a la página). Esta página
+            seguirá creciendo a medida que se vayan añadiendo vídeos.
+          </p>
+          <Link href={"/inmigracion/kyr"}>
+            <div className={classes.responsiveImageWrapper}>
+              <Image src={KYR} width={900}></Image>
+            </div>
+          </Link>
+          <p>
+            Oprima{" "}
+            <a
+              href={
+                "https://drive.google.com/file/d/16daxkMvOyyFnlocwfj4B471exwoMYYn1/view?usp=sharing"
+              }
+              target="_blank"
+              style={{ color: "#56b4e9" }}
+            >
+              aquí
+            </a>{" "}
+            para bajar el versión para imprimir.
+          </p>
+        </section>
+      </main>
 
-          </section></main>
-
-      
       <main className={classes.main}>
-      <h2>Calendario de julio</h2>
+        <h2>Calendario de julio</h2>
         <div>
-        <object
-          data="mypdf.pdf"
-          className={classes.frame}
-          type="application/pdf"
-        >
-          <embed
-            src="https://drive.google.com/file/d/1P82aqZSgEcCex0PQqyFVzkz5M6_Y9uNa/preview"
+          <object
+            data="mypdf.pdf"
             className={classes.frame}
-          />
-        </object></div>
+            type="application/pdf"
+          >
+            <embed
+              src="https://drive.google.com/file/d/1P82aqZSgEcCex0PQqyFVzkz5M6_Y9uNa/preview"
+              className={classes.frame}
+            />
+          </object>
+        </div>
         {/* <h2>Boletín</h2>
         <object
           data="mypdf.pdf"
