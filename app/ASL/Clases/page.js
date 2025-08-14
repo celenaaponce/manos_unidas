@@ -12,14 +12,14 @@ export default function Clases() {
         <div className={classes.hero}>
         <AudioPlayer
             className={classes.audioPlayer}
-            src="/audio/reg.mp3"
+            src="/audio/registrar.mp3"
             style={{marginLeft:"-5rem"}}
           />
           <h1>
             Registrar para clases gratuitas
           </h1>
           <p>
-            Registrese <Link href={'https://celenaponce.aidaform.com/clases-de-asl'}>aqui</Link> 
+            Nuestras proximas clases empiezan en octubre, 2025.  Se puede mandar texto a Celena (360.521.2732) o correo electronico <Link href="mailto:Celena<celena.a.ponce@gmail.com>" className={classes.contact}>celena.a.ponce@gmail.com</Link> para más información.
           </p>
         </div>
         <div className={classes.imageContainer}>
