@@ -106,7 +106,7 @@ export default function Home() {
       </main>
 
       <main className={classes.main}>
-        <h2>Calendario de julio</h2>
+        {/* <h2>Calendario de julio</h2>
         <div>
           <object
             data="mypdf.pdf"
@@ -118,7 +118,7 @@ export default function Home() {
               className={classes.frame}
             />
           </object>
-        </div>
+        </div> */}
         {/* <h2>Boletín</h2>
         <object
           data="mypdf.pdf"
