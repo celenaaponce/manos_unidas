@@ -134,7 +134,7 @@ export default function Home() {
           title="Quien Somos"
           audioSrc="/audio/quiensomos.mp3"
           content={[
-            "Empezando en 2021 a través del centro para jovenes sordos y con dificultades auditivas (CDHY) en el estado de Washington, ofrecimos clases de lengua de señas americana en español a 6 familias. Desde este tiempo, hemos crecido a mas que 60 familias en todo los EEUU. En mayo de 2024, decidimos empezar nuestro negocio sin ánimo de lucro para ofrecer más servicios a nuestras familias.",
+            "Empezando en 2021 a través del centro para jovenes sordos y con dificultades auditivas (CDHY) en el estado de Washington, ofrecimos clases de lengua de señas americana en español a 6 familias. Desde este tiempo, hemos crecido a mas que 60 familias en todo los EEUU. En mayo de 2024, decidimos empezar nuestra organización sin ánimo de lucro para ofrecer más servicios a nuestras familias.",
             "Entre los miembros de nuestro consejo tenemos más que 50 años de experiencia trabajando con niños sordos y familias Latinas. También tenemos asociación con organizaciones en 10 estados.",
           ]}
         />
