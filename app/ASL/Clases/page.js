@@ -19,7 +19,7 @@ export default function Clases() {
             Registrar para clases gratuitas
           </h1>
           <p>
-            Nuestras proximas clases empiezan en octubre, 2025.  Se puede mandar texto a Celena (360.521.2732) o correo electronico <Link href="mailto:Celena<celena.a.ponce@gmail.com>" className={classes.contact}>celena.a.ponce@gmail.com</Link> para más información.
+            Nuestras proximas clases empiezan en enero, 2026.  Se puede registrar  <Link href="https://manosunidas.aidaform.com/clases-de-asl-enero-2026" className={classes.contact}>aquí</Link>.
           </p>
         </div>
         <div className={classes.imageContainer}>

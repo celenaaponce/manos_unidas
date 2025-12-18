@@ -14,15 +14,6 @@
     "audio": "/audio/cuentosmirar.mp3"
   },
   {
-    "id": "m3",
-    "name": "Entrar",
-    "description": "Entrar para recursos de sus clases",
-    "image": "/images/enter2.png",
-    "alt": "Entrar a su clase",
-    "audio": "/audio/entrarentrar.mp3",
-    "website": "https://www.clasesdemanosunidas.org"
-  },
-  {
     "id": "m4",
     "name": "Clases",
     "description": "Tomar clases gratis en español para aprender lengua de señas americana. ",

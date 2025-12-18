@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
 import KYR from "public/immigration/kyr.jpg";
+import ASLclasses from "public/others/Eneroclasses.png"
 
 export default function Home() {
   const [isFirstVisit, setIsFirstVisit] = useState(false);
@@ -102,6 +103,15 @@ export default function Home() {
             </a>{" "}
             para bajar el versión para imprimir.
           </p>
+                    <AudioPlayer src="/audio/enero.mp3" className={classes.audioPlayer} style={{marginLeft: "-5rem"}}/>
+
+                    <h2>¡Clases de señas empiezan en enero!</h2>
+                    <p>Haga clic en el imagen para registrar.</p>
+          <Link href={"https://manosunidas.aidaform.com/clases-de-asl-enero-2026"}>
+            <div className={classes.responsiveImageWrapper}>
+              <Image src={ASLclasses} width={700}></Image>
+            </div>
+          </Link>
         </section>
       </main>
 
