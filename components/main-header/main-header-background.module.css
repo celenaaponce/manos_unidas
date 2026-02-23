@@ -1,7 +1,8 @@
 /* Straight Bar Background for Small Screens */
 .straightBar {
-  background-image: linear-gradient(#56b4e9, #0072b2);/* Solid blue color */
-  height: 200px; /* Adjust height as needed */
+  background-image: linear-gradient(#56b4e9, #0072b2);
+  min-height: 280px;
+  height: auto;
   position: absolute;
   width: 100%;
   top: 0;

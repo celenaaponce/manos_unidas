@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import {
   Navbar,
@@ -6,113 +7,183 @@ import {
   NavbarItem,
   Link,
   Button,
-  DropdownItem,
-  DropdownTrigger,
   Dropdown,
+  DropdownTrigger,
   DropdownMenu,
+  DropdownItem,
 } from "@nextui-org/react";
-import {
-  ChevronDown,
-  Lock,
-  Activity,
-  Flash,
-  Server,
-  TagUser,
-  Scale,
-} from "./iconds.jsx";
-// import { AcmeLogo } from "./AcmeLogo.jsx";
-import classes from "./main-header.module.css"; // Import the CSS file
+
+import { ChevronDown } from "./iconds.jsx";
+import classes from "./main-header.module.css";
 import MainHeaderBackground from "./main-header-background";
+
 import logo from "public/categories/testlogo.png";
-import Image from "next/image.js";
+import Image from "next/image";
 
 export default function MainHeader() {
-  const icons = {
-    chevron: <ChevronDown className={classes.chevronIcon} />,
-    scale: <Scale className="text-warning" fill="currentColor" size={30} />,
-    lock: <Lock className="text-success" fill="currentColor" size={30} />,
-    activity: (
-      <Activity className="text-secondary" fill="currentColor" size={30} />
-    ),
-    flash: <Flash className="text-primary" fill="currentColor" size={30} />,
-    server: <Server className="text-success" fill="currentColor" size={30} />,
-    user: <TagUser className="text-danger" fill="currentColor" size={30} />,
-  };
-  const items = [
+  const chevron = <ChevronDown className={classes.chevronIcon} />;
+
+  /* Aprender ASL dropdown */
+  const aprenderASL = [
     {
-      key: "ASL",
-      label: "ASL",
-      href: "/ASL",
-    },
-    {
-      key: "Clases",
-      label: "Clases",
-      href: "/ASL/Clases",
-    },
-    {
-      key: "Diccionario",
+      key: "diccionario",
       label: "Diccionario",
-      href: "/ASL/Diccionario",
+      href: "/aprender-asl/diccionario",
     },
     {
-      key: "Libros",
-      label: "Libros",
-      href: "/ASL/Cuentos",
+      key: "clases",
+      label: "Clases gratuitas",
+      href: "/aprender-asl/clases-gratuitas",
+    },
+    {
+      key: "videos",
+      label: "Videos",
+      href: "/aprender-asl/videos",
+    },
+    {
+      key: "historias",
+      label: "Historias",
+      href: "/aprender-asl/historias",
+    },
+  ];
+
+  /* Programas dropdown */
+  const programas = [
+    {
+      key: "clases-asl",
+      label: "Clases ASL",
+      href: "/aprender-asl",
+    },
+    {
+      key: "manejo",
+      label: "Manejo",
+      href: "/programas/manejo",
+    },
+    {
+      key: "aplicacion",
+      label: "Aplicación",
+      href: "/programas/aplicacion",
+    },
+  ];
+
+  const inmigracionItems = [
+    {
+      key: "kyr",
+      label: "Conozca sus derechos",
+      href: "/inmigracion/kyr",
+    },
+    {
+      key: "recursos",
+      label: "Recursos",
+      href: "/inmigracion/recursos",
+    },
+    {
+      key: "talleres",
+      label: "Talleres",
+      href: "/inmigracion/talleres",
     },
   ];
 
   return (
-    <Navbar>
+    <div className={classes.headerWrapper}>
       <MainHeaderBackground />
-      <header className={classes.header}>
-        <Link className={classes.logo} href="/">
-          <Image src={logo} width={500} height={"auto"} alt="manos unidos"/>
-        </Link>
-        <nav className={classes.nav}>
-          <NavbarContent justify="center">
+
+      <Navbar className={classes.navbar}>
+        <header className={classes.header}>
+          {/* Logo */}
+          <Link className={classes.logo} href="/">
+            <Image src={logo} width={500} height={"auto"} alt="Manos Unidas" />
+          </Link>
+
+          <NavbarContent justify="center" className={classes.navContent}>
+            {/* Mobile Home */}
+            <NavbarItem>
+              <Link
+                href="/"
+                className={`${classes.link} ${classes.mobileOnly}`}
+              >
+                Inicio
+              </Link>
+            </NavbarItem>
+
+            {/* Aprender ASL */}
             <Dropdown className={classes.dropdown}>
               <NavbarItem>
                 <DropdownTrigger>
-                  <Button
-                    disableRipple
-                    className={classes.customButton}
-                    endContent={icons.chevron}
-                  >
-                    <Link href="/ASL" className={classes.link}>Aprender ASL</Link>
+                  <Button disableRipple className={classes.customButton}>
+                    <Link href="/aprender-asl" className={classes.navMainLink}>
+                      Aprender ASL
+                    </Link>
+
+                    <span className={classes.chevronTrigger}>{chevron}</span>
                   </Button>
                 </DropdownTrigger>
               </NavbarItem>
-              <DropdownMenu aria-label="Dynamic Actions" items={items}>
 
-                {(item) => (
-                  <DropdownItem
-                    key={item.key}
-                    className={classes.dditem}
-                    textValue={item.label}
-                  >
+              <DropdownMenu aria-label="Aprender ASL">
+                {aprenderASL.map((item) => (
+                  <DropdownItem key={item.key} className={classes.dditem}>
                     <Link href={item.href}>{item.label}</Link>
-                    
                   </DropdownItem>
-                )}
+                ))}
               </DropdownMenu>
             </Dropdown>
-            {/* <li className={classes.item}> */}
-            <NavbarItem isActive>
-              <Link href="/inmigracion" aria-current="page" className={classes.link}>
-                Inmigración
-              </Link>
-            </NavbarItem>
-            {/* </li> */}
-            {/* <li className={classes.item}> */}
+
+            {/* Inmigración */}
+            <Dropdown className={classes.dropdown}>
+              <NavbarItem>
+                <DropdownTrigger>
+                  <Button disableRipple className={classes.customButton}>
+                    <Link href="/inmigracion" className={classes.navMainLink}>
+                      Inmigración
+                    </Link>
+
+                    <span className={classes.chevronTrigger}>{chevron}</span>
+                  </Button>
+                </DropdownTrigger>
+              </NavbarItem>
+
+              <DropdownMenu aria-label="Inmigración">
+                {inmigracionItems.map((item) => (
+                  <DropdownItem key={item.key} className={classes.dditem}>
+                    <Link href={item.href}>{item.label}</Link>
+                  </DropdownItem>
+                ))}
+              </DropdownMenu>
+            </Dropdown>
+
+            {/* Programas */}
+            <Dropdown className={classes.dropdown}>
+              <NavbarItem>
+                <DropdownTrigger>
+                  <Button disableRipple className={classes.customButton}>
+                    <Link href="/programas" className={classes.navMainLink}>
+                      Programas
+                    </Link>
+
+                    <span className={classes.chevronTrigger}>{chevron}</span>
+                  </Button>
+                </DropdownTrigger>
+              </NavbarItem>
+
+              <DropdownMenu aria-label="Programas">
+                {programas.map((item) => (
+                  <DropdownItem key={item.key} className={classes.dditem}>
+                    <Link href={item.href}>{item.label}</Link>
+                  </DropdownItem>
+                ))}
+              </DropdownMenu>
+            </Dropdown>
+
+            {/* Donar */}
             <NavbarItem>
-              <Link href="/otros" aria-current="page" className={classes.link}>
-                Otros Servicios
+              <Link href="/donar" className={classes.link}>
+                Donar
               </Link>
             </NavbarItem>
-            {/* </li> */}
           </NavbarContent>
-        </nav>
-      </header>
-    </Navbar>
+        </header>
+      </Navbar>
+    </div>
   );
 }

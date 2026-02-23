@@ -1,0 +1,68 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.registerBlock {
+  margin-bottom: 2rem;
+}
+
+.primaryButton {
+  display: inline-block;
+  background: #4da3ff;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.secondaryButton {
+  display: inline-block;
+  margin-top: 0.5rem;
+  border: 1px solid #4da3ff;
+  color: #4da3ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.list {
+  color: rgba(255,255,255,0.8);
+  padding-left: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.text {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.3rem;
+}

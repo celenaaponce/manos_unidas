@@ -10,7 +10,7 @@ import DictCategory from "../page";
 
 export default function DictTheme(chosenCategory) {
   const categoryInfo = Themes["Categories"].find(
-    (cat) => cat.category == chosenCategory.category
+    (cat) => cat.category == chosenCategory.category,
   );
   // console.log(categoryInfo.ids)
   const [themeData, setThemeData] = useState([]);
@@ -20,35 +20,42 @@ export default function DictTheme(chosenCategory) {
   function handleBackClick() {
     DictCategory();
   }
-  useEffect(() => {
-    async function getData() {
-      let allData = [];
-      let nextCursor = null;
-      let hasMore = true;
+useEffect(() => {
 
-      while (hasMore && chosenTheme != null) {
-        let fetchedData;
-        if (nextCursor == null) {
-          fetchedData = await fetchData(chosenTheme);
-        } else {
-          fetchedData = await fetchData(chosenTheme, nextCursor);
-        }
-        // console.log(fetchedData);
-        allData = [...allData, ...fetchedData.response.results];
-        nextCursor = fetchedData.response.next_cursor;
-        hasMore = fetchedData.response.has_more;
-        // console.log('all', allData)
+  if (!chosenTheme) return;
+
+  async function getData() {
+    let allData = [];
+    let nextCursor = null;
+    let hasMore = true;
+
+    while (hasMore) {
+
+      const fetchedData = await fetchData(chosenTheme, nextCursor);
+
+      if (!fetchedData?.response) {
+        console.error("Notion fetch failed:", fetchedData);
+        break;
       }
 
-      setThemeData(allData);
-      // console.log(chosenTheme);
+      const response = fetchedData.response;
+
+      allData = [...allData, ...response.results];
+
+      nextCursor = response.next_cursor;
+      hasMore = response.has_more;
     }
 
-    getData();
-  }, [chosenTheme]);
-  const themeInfo = categoryInfo && categoryInfo.ids 
-  ? Themes["Themes"].filter((theme) => categoryInfo.ids.includes(theme.id)) 
-  : [];;
+    setThemeData(allData);
+  }
+
+  getData();
+
+}, [chosenTheme]);
+  const themeInfo =
+    categoryInfo && categoryInfo.ids
+      ? Themes["Themes"].filter((theme) => categoryInfo.ids.includes(theme.id))
+      : [];
 
   // console.log(themeInfo)
   function handleOnClick(theme) {
@@ -106,5 +113,3 @@ export default function DictTheme(chosenCategory) {
     );
   }
 }
-
-
