@@ -7,7 +7,7 @@ export default function StoriesPage() {
     <div>
       <main classesName={classes.main}>
 
-          <ContentGrid source={'app/ASL/Cuentos/available-stories.json'} />
+          <ContentGrid source={'app/aprender-asl/historias/available-stories.json'} />
 
       </main>
     </div>
