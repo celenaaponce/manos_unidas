@@ -6,15 +6,12 @@ import styles from "./page.module.css";
 export default function ManejoRecursosPage() {
   return (
     <div className={styles.container}>
-      
       {/* Back */}
       <Link href="/programas/manejo" className={styles.backLink}>
         ← Regresar a Manejo
       </Link>
 
-      <h1 className={styles.title}>
-        Recursos para clases de manejo
-      </h1>
+      <h1 className={styles.title}>Recursos para clases de manejo</h1>
 
       <p className={styles.subtitle}>
         Información sobre las clases de permiso de manejo accesibles en ASL.
@@ -22,20 +19,25 @@ export default function ManejoRecursosPage() {
 
       {/* Register button */}
       <div className={styles.registerBlock}>
-        <Link
-          href="/programas/manejo/permiso"
-          className={styles.primaryButton}
-        >
+        <Link href="/programas/manejo/permiso" className={styles.primaryButton}>
           📝 Registrarse para la clase
+        </Link>
+      </div>
+
+      {/* Support Drivers Ed Survey */}
+      <div className={styles.registerBlock}>
+        <Link
+          href="/programas/manejo/recursos/apoyar"
+          className={styles.secondaryButton}
+        >
+          📊 Apoyar currículo accesible de manejo
         </Link>
       </div>
 
       {/* Info sections */}
 
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>
-          👤 ¿Quién puede tomar la clase?
-        </h2>
+        <h2 className={styles.sectionTitle}>👤 ¿Quién puede tomar la clase?</h2>
 
         <ul className={styles.list}>
           <li>Personas sordas o sordos parciales</li>
@@ -46,9 +48,7 @@ export default function ManejoRecursosPage() {
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>
-          🤟 Idiomas
-        </h2>
+        <h2 className={styles.sectionTitle}>🤟 Idiomas</h2>
 
         <ul className={styles.list}>
           <li>Lengua de Señas Americana (ASL)</li>
@@ -57,37 +57,26 @@ export default function ManejoRecursosPage() {
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>
-          📚 Qué incluye la clase
-        </h2>
+        <h2 className={styles.sectionTitle}>📚 Qué incluye la clase</h2>
 
         <ul className={styles.list}>
           <li>Explicación de señales de tráfico</li>
           <li>Reglas de la carretera</li>
           <li>Preparación para el examen del permiso</li>
           <li>Clases completamente accesibles en ASL</li>
-          
         </ul>
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>
-          📍 Ubicación
-        </h2>
+        <h2 className={styles.sectionTitle}>📍 Ubicación</h2>
 
-        <p className={styles.text}>
-          Las clases son virtuales por Zoom.
-        </p>
+        <p className={styles.text}>Las clases son virtuales por Zoom.</p>
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>
-          ❓ Preguntas
-        </h2>
+        <h2 className={styles.sectionTitle}>❓ Preguntas</h2>
 
-        <p className={styles.text}>
-          Si tiene preguntas, puede contactarnos.
-        </p>
+        <p className={styles.text}>Si tiene preguntas, puede contactarnos.</p>
 
         <a
           href="mailto:celena.a.ponce@gmail.com"
@@ -96,7 +85,6 @@ export default function ManejoRecursosPage() {
           ✉️ Enviar correo
         </a>
       </div>
-
     </div>
   );
 }
